@@ -1,5 +1,7 @@
 ## Micro16S 交互系统online交付
 
+![](./online_upload.png)
+
 #### 后端主程序: 
 
 ```shell
