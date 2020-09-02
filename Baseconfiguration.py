@@ -9,7 +9,7 @@ import argparse, subprocess
 sys.path.append("/root/16s/Modules/Download_online")
 from mysqldatabase import microbase
 from mongodb import Mymongo
-
+import datetime
 '''
 查询mysql和mongo数据库获取需求信息并生成json数据配置文件
 '''
@@ -28,12 +28,12 @@ class Configuration():
 
 	def search_mysql(self):
 		#subid = set()
-		mysql = microbase("120.24.56.191", "micro16s", 'root', 'BgiMicrobe2020', '3307')
+		self.mysql = microbase("120.24.56.191", "micro16s", 'root', 'BgiMicrobe2020', '3307')
 		#查询结果由元组=>dict pymysql.cursors.DictCursor
-		mysql.to_dict()
-		mysearch_password = mysql.read_from_outspace('select password from micro16s.t_microbe_customer where customer_email = \"{}\"'.format(self.customer_email))
+		self.mysql.to_dict()
+		mysearch_password = self.mysql.read_from_outspace('select password from micro16s.t_microbe_customer where customer_email = \"{}\"'.format(self.customer_email))
 		self.myconfig.update(mysearch_password[0])
-		mysearch = mysql.read_from_outspace('select action_man, sale_man, info_email  from micro16s.t_microbe_project \
+		mysearch = self.mysql.read_from_outspace('select action_man, sale_man, info_email  from micro16s.t_microbe_project \
 								where {}'.format(' or '.join("sub_code = \"%s\"" % s for s in self.project)))
 		#合并多个项目值
 		merge_dict = defaultdict(set)
@@ -43,6 +43,7 @@ class Configuration():
 				merge_dict[key].add(value)
 		
 		self.myconfig.update(merge_dict)
+		#mysql.pause_database()
 	
 
 	def search_mongo(self):
@@ -55,11 +56,11 @@ class Configuration():
 		self.project = findinfo['projects']
 		self.customer_email = findinfo.get('customerEmail')
 		self.myconfig.update({'analysis_path':findinfo.get('analysis_path', "NULL"), "projects":self.project, "customerEmail": self.customer_email})
-		
-	
-	#def save_as_json(self):
-		#self.injson = json.dumps(self.myconfig)
 
+
+	def update_mysql(self, online_account, online_password):
+		'''更新关键信息至mysql数据库'''
+		self.mysql.read_from_outspace("update micro16s.t_microbe_delivery set add_time='{}',is_upload='1',analysis_path='{}',account='{}', password='{}' where plan_code='{}'".format(str(datetime.datetime.now()), self.myconfig['analysis_path'], online_account, online_password, self.analysisid))
 
 
 class Onlinepermission():
@@ -147,6 +148,7 @@ class Onlinepermission():
 		已使用固定账号密码;因此该功能暂停
 		'''
 		pass
+
 
 
 if __name__  == '__main__':

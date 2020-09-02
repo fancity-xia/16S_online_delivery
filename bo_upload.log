@@ -1,0 +1,16 @@
+nohup: ignoring input
+{'plan_code': '6cLB4ma'}
+mongodb://root:BgiMicrobe%402020@120.24.55.116:27017
+connect successful......
+connect mysql......
+connect mysql successful......
+[{'action_man': 'zhaoyifan@bgi.com', 'sale_man': 'caidan@genomics.cn', 'info_email': 'zengdan@genomics.cn'}]
+/root/Software/miniconda3/envs/qiime1/bin/bo login --token 8HX5tDVZIDraS8OS9XSQuTbtaTddT3Qs --noprojects
+/root/Software/miniconda3/envs/qiime1/bin/bo select V3fmjM
+Could not find a project named 'V3fmjM'
+V3fmjM need to be created
+/root/Software/miniconda3/envs/qiime1/bin/bo new project V3fmjM
+/root/Software/miniconda3/envs/qiime1/bin/bo mkdir c1d1004f-1f60-4c60-b9f4-5c686e037a75:/6cLB4ma
+/root/Software/miniconda3/envs/qiime1/bin/bo upload -c 5 -f /nas1/production_16s/analysis/report/6cLB4ma/result/upload c1d1004f-1f60-4c60-b9f4-5c686e037a75:/6cLB4ma/
+/root/Software/miniconda3/envs/qiime1/bin/bo new delivery_user -p 2vXfofO -d 30 807729670online
+/root/Software/miniconda3/envs/qiime1/bin/bo set_permission -p c1d1004f-1f60-4c60-b9f4-5c686e037a75 807729670online dv

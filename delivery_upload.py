@@ -34,13 +34,12 @@ class Online_upload():
 		self.online_project = '_'.join(self.baseinfo.myconfig['projects'])
 		#登录online 创建账号
 		self.online = Onlinepermission()
-		print(self.baseinfo.myconfig)
+		#print(self.baseinfo.myconfig)
 		self.usreamil = self.baseinfo.myconfig.get("customerEmail", 'test')
-		usr_compile = re.compile(r'(^[A-Za-z0-9_]+)@')
-		self.usr = usr_compile.findall(self.usreamil)[0]
-		print(self.usr)
-		self.password = self.baseinfo.myconfig.get("password", "test1234")
-		#self.upload_main()
+		usr_compile = re.compile(r'(^[A-Za-z0-9]+)@')
+		self.usr = usr_compile.findall(self.usreamil)[0] + "_online"
+		self.password = self.baseinfo.myconfig.get("password", "test1234") + "_online"
+		self.upload_main()
 
 	
 	def bo_select(self):
@@ -114,6 +113,10 @@ class Online_upload():
 	def run_subprocess(self, instring):
 		return Onlinepermission.run_subprocess(instring)
 		
+	
+	def update_mysql(self):
+		self.baseinfo.update_mysql(self.usr, self.password)
+
 
 	def send_email(self):
 		'''
@@ -124,9 +127,9 @@ class Online_upload():
 		eestring = ee.read()
 		ee.close()
 		#cc = "xiazhanfeng@genomics.cn,wangshuang3@genomics.cn"
-		cc = "xiazhanfeng@genomics.cn,wangshuang3@genomics.cn" + ",".join(self.baseinfo.myconfig['info_email'])
+		cc = "xiazhanfeng@genomics.cn,wangshuang3@genomics.cn," + ",".join(self.baseinfo.myconfig['info_email'])
 		eestring = eestring.format(self.analysisid, ','.join(self.baseinfo.myconfig['projects']), self.usr, self.password)
-		myemail = Exchange_email("{}数据交付".format(self.analysisid), eestring, ','.join(self.baseinfo.myconfig['action_man']), cc)
+		myemail = Exchange_email("{}数据交付(测试请忽略)".format(self.analysisid), eestring, ','.join(self.baseinfo.myconfig['action_man']), cc)
 
 
 if __name__  == '__main__':
@@ -135,4 +138,6 @@ if __name__  == '__main__':
 	args = parser.parse_args()
 	analysisid = args.analysisid
 	p = Online_upload(analysisid)
+	#p.upload_main()
 	p.send_email()
+	p.update_mysql()
