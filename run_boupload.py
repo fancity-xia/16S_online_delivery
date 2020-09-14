@@ -9,11 +9,14 @@ import json
 import yaml
 from multiprocessing import Process
 import subprocess
-sys.path.append("/root/16s/Modules/SimplePipe")
-from myRabbitMQ import MyRabbit
+sys.path.append(os.path.join(os.path.dirname(os.path.realpath(__file__)), ".."))
+#sys.path.append("/root/16s/Modules/SimplePipe")
+#sys.path.append("/root/16s/Modules")
+from Email.exchange_email import Exchange_email
+from SimplePipe.myRabbitMQ import MyRabbit
 import datetime
 import subprocess
-from delivery_upload import Online_upload
+from delivery_upload import Pipeline_Upload
 
 '''
 通过RabbitMQ获取前端json, 上次16S交付数据至online并发送邮件给项目相关人员进行质控; 同时在数据库存储关键信息
@@ -32,17 +35,20 @@ class MultiRabbit(MyRabbit):
 		receive_message = json.loads(body.decode())
 		#self.worknum.append(receive_message)
 		print(receive_message)
-		p = Process(target=Run_mainpipe, args=(receive_message['plan_code'],))
+		p = Process(target=Run_mainpipe, args=(receive_message,))
 		p.start()
 
 
-def Run_mainpipe(plan_code):
+def Run_mainpipe(message):
 	try:
-		myupload = Online_upload(plan_code)
-		myupload.send_email()
+		myupload = Pipeline_Upload(message['plan_code'])
+		myupload.send_email(message['user_email'])
 		myupload.update_mysql()
 	except Exception as e:
-		print(e)
+		errlog = '''<b>Auto Delivery Error</b>:
+		<span style="text-indent:2em; color=red">错误日志信息:{}</span>
+		<span style="text-indent:2em; color=green">Connect Email:  xiazhanfeng@genomics.cn</span>'''.format(e)
+		Exchange_email(message['plan_code'] + " Micro16S Auto Delivery Debug", errlog, 'xiazhanfeng@genomics.cn', message['user_email'] + ',wangshuang3@genomics.cn')
 
 
 

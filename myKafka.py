@@ -8,6 +8,8 @@ import argparse
 import json
 from kafka import KafkaConsumer, KafkaProducer
 from multiprocessing import Process
+sys.path.append(os.path.join(os.path.dirname(os.path.realpath(__file__)), "../lib"))
+from config import *
 '''
 kafka 类用于接收和发送队列消息
 '''
@@ -60,12 +62,12 @@ class kafkaconfig():
 	__slot__ =  ["server", "group", "topic", "user", "password"]
 	def __init__(self):
 		#self.server = ["120.24.56.191:9092","120.24.52.186:9092","120.24.55.116:9092"]
-		self.server = ['16s1:9092','16s2:9092','16s3:9092']
-		self.test_server = ['16s7:9092','16s7:9093','16s7:9094']
-		self.group = "fancity"
-		self.topic = "wlf-topic"
-		self.user = "admin"
-		self.password = "BgiMicrobe2020"
+		#self.test_server = ['16s7:9092','16s7:9093','16s7:9094']
+		self.server = Kafka_delivery_message['server']
+		self.group = Kafka_delivery_message['group']
+		self.topic = Kafka_delivery_message['topic']
+		self.user = Kafka_delivery_message['user']
+		self.password = Kafka_delivery_message['password']
 
 
 if __name__  == '__main__':

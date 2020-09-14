@@ -1,16 +1,105 @@
 nohup: ignoring input
-{'plan_code': '6cLB4ma'}
+{'plan_code': 'Ch48IwX', 'user_email': 'P_Micro_Bioanalysis@genomics.cn'}
 mongodb://root:BgiMicrobe%402020@120.24.55.116:27017
 connect successful......
 connect mysql......
 connect mysql successful......
-[{'action_man': 'zhaoyifan@bgi.com', 'sale_man': 'caidan@genomics.cn', 'info_email': 'zengdan@genomics.cn'}]
+[{'action_man': 'zengzhenhua@genomics.cn', 'sale_man': 'caidan@genomics.cn', 'info_email': 'zengdan@genomics.cn'}, {'action_man': 'zengzhenhua@bgi.com', 'sale_man': 'liuxing4@genomics.cn', 'info_email': 'zengdan@genomics.cn'}]
+/root/Software/miniconda3/envs/qiime1/bin/bo login --token 8HX5tDVZIDraS8OS9XSQuTbtaTddT3Qs --noprojects
+/root/Software/miniconda3/envs/qiime1/bin/bo select V3wlyM_V3nrrM
+Could not find a project named 'V3wlyM_V3nrrM'
+V3wlyM_V3nrrM need to be created
+/root/Software/miniconda3/envs/qiime1/bin/bo new project V3wlyM_V3nrrM
+/root/Software/miniconda3/envs/qiime1/bin/bo mkdir a4b91706-afd0-45d2-b69b-55eac28246c6:/Ch48IwX
+/root/Software/miniconda3/envs/qiime1/bin/bo upload -c 5 -f /nas1/production_16s/analysis/report/Ch48IwX/result/upload a4b91706-afd0-45d2-b69b-55eac28246c6:/Ch48IwX/
+/root/Software/miniconda3/envs/qiime1/bin/bo new delivery_user -p xl426al_online -d 30 wynxts_online
+/root/Software/miniconda3/envs/qiime1/bin/bo set_permission -p a4b91706-afd0-45d2-b69b-55eac28246c6 wynxts_online dv
+nohup: ignoring input
+{'plan_code': '6cLB4ma', 'user_email': 'P_Micro_Bioanalysis@genomics.cn'}
+mongodb://root:BgiMicrobe%402020@120.24.55.116:27017
+connect mongo successful......
+connect mysql......
+connect mysql successful......
+[{'project_num': 'F19FTSNWWLJ3445', 'action_man': 'zhaoyifan@bgi.com', 'sale_man': 'caidan@genomics.cn', 'info_email': 'zengdan@genomics.cn'}]
+/root/Software/miniconda3/envs/qiime1/bin/bo login --token 8HX5tDVZIDraS8OS9XSQuTbtaTddT3Qs --noprojects
+/root/Software/miniconda3/envs/qiime1/bin/bo select V3fmjM
+Setting current project to: V3fmjM
+V3fmjM have existed
+/root/Software/miniconda3/envs/qiime1/bin/bo find project
+/root/Software/miniconda3/envs/qiime1/bin/bo mkdir 02c5d572-e984-4aa9-a5a2-2d3d25934d04:/6cLB4ma
+/root/Software/miniconda3/envs/qiime1/bin/bo upload -c 5 -f /nas1/production_16s/analysis/report/6cLB4ma/result/upload 02c5d572-e984-4aa9-a5a2-2d3d25934d04:/6cLB4ma/
+/root/Software/miniconda3/envs/qiime1/bin/bo new delivery_user -p 2vXfofO_Online1 -d 30 807729670_Online1
+/root/Software/miniconda3/envs/qiime1/bin/bo set_permission -p 02c5d572-e984-4aa9-a5a2-2d3d25934d04 807729670_Online1 dv
+{'plan_code': '6cLB4ma', 'user_email': 'P_Micro_Bioanalysis@genomics.cn'}
+mongodb://root:BgiMicrobe%402020@120.24.55.116:27017
+connect mongo successful......
+connect mysql......
+connect mysql successful......
+[{'project_num': 'F19FTSNWWLJ3445', 'action_man': 'zhaoyifan@bgi.com', 'sale_man': 'caidan@genomics.cn', 'info_email': 'zengdan@genomics.cn'}]
+/root/Software/miniconda3/envs/qiime1/bin/bo login --token 8HX5tDVZIDraS8OS9XSQuTbtaTddT3Qs --noprojects
+/root/Software/miniconda3/envs/qiime1/bin/bo select V3fmjM
+Setting current project to: V3fmjM
+V3fmjM have existed
+/root/Software/miniconda3/envs/qiime1/bin/bo find project
+/root/Software/miniconda3/envs/qiime1/bin/bo mkdir 02c5d572-e984-4aa9-a5a2-2d3d25934d04:/6cLB4ma
+/root/Software/miniconda3/envs/qiime1/bin/bo upload -c 5 -f /nas1/production_16s/analysis/report/6cLB4ma/result/upload 02c5d572-e984-4aa9-a5a2-2d3d25934d04:/6cLB4ma/
+Traceback (most recent call last):
+  File "/root/Software/miniconda3/envs/qiime1/bin/bo", line 8, in <module>
+    sys.exit(main())
+  File "/root/Software/miniconda3/envs/qiime1/lib/python2.7/site-packages/bgionline/scripts/bo.py", line 472, in main
+    args.func(args)
+  File "/root/Software/miniconda3/envs/qiime1/lib/python2.7/site-packages/bgionline/utils/__init__.py", line 350, in _set_confg
+    func(args)
+  File "/root/Software/miniconda3/envs/qiime1/lib/python2.7/site-packages/bgionline/cli/__init__.py", line 849, in upload
+    os.kill(i, 9)
+OSError: [Errno 3] No such process
+{'plan_code': '6cLB4ma', 'user_email': 'P_Micro_Bioanalysis@genomics.cn'}
+mongodb://root:BgiMicrobe%402020@120.24.55.116:27017
+connect mongo successful......
+connect mysql......
+connect mysql successful......
+[{'project_num': 'F19FTSNWWLJ3445', 'action_man': 'zhaoyifan@bgi.com', 'sale_man': 'caidan@genomics.cn', 'info_email': 'zengdan@genomics.cn'}]
 /root/Software/miniconda3/envs/qiime1/bin/bo login --token 8HX5tDVZIDraS8OS9XSQuTbtaTddT3Qs --noprojects
 /root/Software/miniconda3/envs/qiime1/bin/bo select V3fmjM
 Could not find a project named 'V3fmjM'
 V3fmjM need to be created
 /root/Software/miniconda3/envs/qiime1/bin/bo new project V3fmjM
-/root/Software/miniconda3/envs/qiime1/bin/bo mkdir c1d1004f-1f60-4c60-b9f4-5c686e037a75:/6cLB4ma
-/root/Software/miniconda3/envs/qiime1/bin/bo upload -c 5 -f /nas1/production_16s/analysis/report/6cLB4ma/result/upload c1d1004f-1f60-4c60-b9f4-5c686e037a75:/6cLB4ma/
-/root/Software/miniconda3/envs/qiime1/bin/bo new delivery_user -p 2vXfofO -d 30 807729670online
-/root/Software/miniconda3/envs/qiime1/bin/bo set_permission -p c1d1004f-1f60-4c60-b9f4-5c686e037a75 807729670online dv
+/root/Software/miniconda3/envs/qiime1/bin/bo mkdir 8e3604c6-ea93-4118-90d4-342d6fd2d7a1:/6cLB4ma
+/root/Software/miniconda3/envs/qiime1/bin/bo upload -c 5 -f /nas1/production_16s/analysis/report/6cLB4ma/result/upload 8e3604c6-ea93-4118-90d4-342d6fd2d7a1:/6cLB4ma/
+/root/Software/miniconda3/envs/qiime1/bin/bo new delivery_user -p 2vXfofO_Online1 -d 30 807729670_Online1
+/root/Software/miniconda3/envs/qiime1/bin/bo set_permission -p 8e3604c6-ea93-4118-90d4-342d6fd2d7a1 807729670_Online1 dv
+Traceback (most recent call last):
+  File "/root/16s/Modules/Bo_upload/run_boupload.py", line 64, in <module>
+    rab.receieve()
+  File "/root/16s/Modules/SimplePipe/myRabbitMQ.py", line 81, in receieve
+    self.channel.start_consuming()
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 1866, in start_consuming
+    self._process_data_events(time_limit=None)
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 2027, in _process_data_events
+    self.connection.process_data_events(time_limit=time_limit)
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 825, in process_data_events
+    self._flush_output(common_terminator)
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 513, in _flush_output
+    self._impl.ioloop.poll()
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/select_connection.py", line 576, in poll
+    self._poller.poll()
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/select_connection.py", line 1181, in poll
+    events = self._poll.poll(self._get_max_wait())
+KeyboardInterrupt
+nohup: ignoring input
+nohup: ignoring input
+{'plan_code': '6cLB4ma', 'user_email': 'P_Micro_Bioanalysis@genomics.cn'}
+mongodb://root:BgiMicrobe%402020@120.24.55.116:27017
+connect mongo successful......
+connect mysql......
+connect mysql successful......
+[{'project_num': 'F19FTSNWWLJ3445', 'action_man': 'zhaoyifan@bgi.com', 'sale_man': 'caidan@genomics.cn', 'info_email': 'zengdan@genomics.cn'}]
+/root/Software/miniconda3/envs/qiime1/bin/bo login --token 8HX5tDVZIDraS8OS9XSQuTbtaTddT3Qs --noprojects
+/root/Software/miniconda3/envs/qiime1/bin/bo select V3fmjM
+Could not find a project named 'V3fmjM'
+V3fmjM need to be created
+/root/Software/miniconda3/envs/qiime1/bin/bo new project V3fmjM
+/root/Software/miniconda3/envs/qiime1/bin/bo mkdir e2861eae-59c9-4587-90d1-8b73063d75fb:/6cLB4ma
+/root/Software/miniconda3/envs/qiime1/bin/bo upload -c 5 -f /nas1/production_16s/analysis/report/6cLB4ma/result/upload e2861eae-59c9-4587-90d1-8b73063d75fb:/6cLB4ma/
+/root/Software/miniconda3/envs/qiime1/bin/bo new delivery_user -p 2vXfofO_Online1 -d 30 807729670_Online1
+/root/Software/miniconda3/envs/qiime1/bin/bo set_permission -p e2861eae-59c9-4587-90d1-8b73063d75fb 807729670_Online1 dv

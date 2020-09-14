@@ -7,6 +7,8 @@ import os, sys, re, urllib
 import argparse
 import pymongo
 import base64
+sys.path.append(os.path.join(os.path.dirname(os.path.realpath(__file__)), "../lib"))
+from config import *
 __author__ =  "fancity.xia"
 __version__ = "1.1"
 
@@ -27,7 +29,7 @@ class Mymongo():
 		print(url)
 		try:
 			self.mongo_client = pymongo.MongoClient(url)
-			print("connect successful......")
+			print("connect mongo successful......")
 		except Exception as e:
 			print(e)
 		
@@ -41,10 +43,10 @@ class Mymongo():
 
 	def _parameter(self):
 		#Simple Encryption
-		self.password = urllib.parse.quote_plus("BgiMicrobe@2020")
-		self.username = urllib.parse.quote_plus("root")
-		self.host = "120.24.55.116"
-		self.port = "27017"
+		self.password = urllib.parse.quote_plus(mongodb_analysis_16s['password'])
+		self.username = urllib.parse.quote_plus(mongodb_analysis_16s['user'])
+		self.host = mongodb_analysis_16s['server']
+		self.port = mongodb_analysis_16s['port']
 	
 
 	def __decode(self, string):
