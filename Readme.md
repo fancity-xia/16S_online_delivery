@@ -4,6 +4,7 @@
 
 #### 后端主程序: 
 
+如不需要进行前端交互则可以直接通过如下程序输入参数执行, 会发送邮件更新数据库; 但是需要改方案编号在mongo数据库有分析路径(8月底之后得方案编号才有)
 ```shell
 python3 /root/16s/Modules/Bo_upload/delivery_upload.py -h
 aliyun service machine bo upload cleandata
@@ -12,12 +13,13 @@ optional arguments:
   -h, --help            show this help message and exit
   --analysisid ANALYSISID, -s ANALYSISID
                         analysis id
-根据analysisid从mysql和mongo数据库查询关键信息(信息分析邮箱,分析路径,项目信息)上传cleandata和部分分析数据至online; 并提供给客户账号密码(账号为邮箱前缀, 密码与16S登录系统一致)发送邮件, 同时把上传成功的状态, online账号密码, 分析路径传递给mysql数据库t_microbe_delivery表。
-数据库账号密码需要即使跟随数据库变动而更新！(必须mongo数据库有该分析id的路径)
+根据analysisid从mysql和mongo数据库查询关键信息(信息分析邮箱,分析路径,项目信息)上传cleandata和部分分析数据至online; 
+并提供给客户账号密码(账号为邮箱前缀, 密码与16S登录系统一致)发送邮件, 同时把上传成功的状态, 
+online账号密码, 分析路径传递给mysql数据库t_microbe_delivery表。
+数据库账号密码需及时跟随数据库变动而更新！
 ```
 
-如不需要进行前端交互则可以直接通过该程序输入参数执行, 会发送邮件更新数据库
-
+针对有方案编号但mongo数据库没有分析路径的使用如下程序输入参数执行
 
 ```shell
 /root/16s/Modules/Bo_upload/UploadPure -h
@@ -31,7 +33,8 @@ optional arguments:
 	                        subproject id
   --analysispath ANALYSISPATH, -a ANALYSISPATH
 								analysis upload path
-根据指定的analysispath(而不是通过mongo数据库)和analysisid 从mysql获取关键信息上传analysispath下数据至online 并发送邮件通知; 目前暂不传递信息给mysql数据库t_microbe_delivery表
+根据指定的analysispath(而不是通过mongo数据库)和analysisid 从mysql获取关键信息上传analysispath下数据至online 
+并发送邮件通知; 目前暂不传递信息给mysql数据库t_microbe_delivery表
 													  
 ```
 
