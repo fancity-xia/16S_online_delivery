@@ -2,25 +2,29 @@
 
 ![](./online_upload.png)
 
-#### 后端主程序: 
+#### 16S分析流程上传主程序(方案编号维度): 
 
-如不需要进行前端交互则可以直接通过如下程序输入参数执行, 会发送邮件更新数据库; 但是需要改方案编号在mongo数据库有分析路径(8月底之后得方案编号才有)
+如不需要进行前端交互则可以直接通过如下程序输入参数执行, 会发送邮件更新数据库; 但是需要改方案编号在mongo数据库有分析路径(2020.9之后的方案编号才有方案分析路径, 可通过analysis_path参数给予)
 ```shell
 python3 /root/16s/Modules/Bo_upload/delivery_upload.py -h
 aliyun service machine bo upload cleandata
 
 optional arguments:
   -h, --help            show this help message and exit
-  --analysisid ANALYSISID, -s ANALYSISID
+  --analysisid ANALYSISID, -s ANALYSISID 方案编号
                         analysis id
+  --analysis_path ANALYSIS_PATH, -p ANALYSIS_PATH
+                        analysis id location 方案分析路径(不填默认查看mongo根据方案编号数据库)
+						
 根据analysisid从mysql和mongo数据库查询关键信息(信息分析邮箱,分析路径,项目信息)上传cleandata和部分分析数据至online; 
 并提供给客户账号密码(账号为邮箱前缀, 密码与16S登录系统一致)发送邮件, 同时把上传成功的状态, 
 online账号密码, 分析路径传递给mysql数据库t_microbe_delivery表。
 数据库账号密码需及时跟随数据库变动而更新！
 ```
 
-针对有方案编号但mongo数据库没有分析路径的使用如下程序输入参数执行
+####16S纯过滤上传主程序
 
+该程序主要包装自online_handle_upload.py; 用于纯过滤数据上传交付, 目前暂无自动化需要人工执行处理
 ```shell
 /root/16s/Modules/Bo_upload/UploadPure -h
 usage: UploadPure [-h] --projectid PROJECTID --analysispath ANALYSISPATH
@@ -33,8 +37,8 @@ optional arguments:
 	                        subproject id
   --analysispath ANALYSISPATH, -a ANALYSISPATH
 								analysis upload path
-根据指定的analysispath(而不是通过mongo数据库)和analysisid 从mysql获取关键信息上传analysispath下数据至online 
-并发送邮件通知; 目前暂不传递信息给mysql数据库t_microbe_delivery表
+根据指定的analysispath 和 projectid 从mysql获取关键信息上传analysispath下数据至online 
+并发送邮件通知; 
 													  
 ```
 
@@ -43,9 +47,9 @@ optional arguments:
 
 
 
-#### 自动化程序
+#### 16S流程结果数据自动化交付程序
 
-为实现前端页面一键交付功能对后端主程序进行了包装同时也添加了与前端的消息交互; 前端操作如下：
+为实现前端页面一键交付功能对后端主程序进行了包装同时也添加了与前端的消息交互; 前端项目管理页面操作如下：
 
 ![](./web.png)
 
@@ -65,6 +69,7 @@ routing_key : DELIVERY
 
 ```
 /root/16s/Modules/Bo_upload
+
 python3 run_boupload.py -h
 pusage: run_boupload.py [-h] [--exchange EXCHANGE] [--queue QUEUE]
                        [--route ROUTE]
@@ -79,6 +84,8 @@ optional arguments:
                         rabbitmq queue name
   --route ROUTE, -r ROUTE
                         rabbitmq routing_key name
+
+后台挂起监听Rabbitmq指定通道(每个消息一个进程进行上传)
 
 ```
 
