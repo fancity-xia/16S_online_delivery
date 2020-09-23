@@ -22,7 +22,7 @@ online账号密码, 分析路径传递给mysql数据库t_microbe_delivery表。
 数据库账号密码需及时跟随数据库变动而更新！
 ```
 
-####16S纯过滤上传主程序
+#### 16S纯过滤上传主程序(子项目维度)
 
 该程序主要包装自online_handle_upload.py; 用于纯过滤数据上传交付, 目前暂无自动化需要人工执行处理
 ```shell
@@ -89,7 +89,7 @@ optional arguments:
 
 ```
 
-日志：
+#### 日志：
 
 ```shell
 {'plan_code': '6cLB4ma'}
