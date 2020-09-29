@@ -7,6 +7,7 @@ import os, sys, datetime
 import argparse
 sys.path.append(os.path.join(os.path.dirname(os.path.realpath(__file__)), ".."))
 from Bo_upload.delivery_upload import Pipeline_Upload
+from OTU_Cluster.lib import upload_cleandata_to_file
 from Download_online.mysqldatabase import microbase
 from lib.config import *
 '''
@@ -41,6 +42,9 @@ def main(argv=None):
 	parser.parse_args(argv)
 	projectid = args.projectid
 	analsysispath = args.analysispath
+	#生成copy
+	if not os.path.lexists(analsysispath + "/result/upload"):
+		upload_cleandata_to_file.Run_cp_upload(analsysispath, Pure_16S_Pipeline['method'], Pure_16S_Pipeline['upload_CleanData_output_file'])
 	handle_upload = PureFilter_upload(projectid, analsysispath)
 	handle_upload.send_email()
 

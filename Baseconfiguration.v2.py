@@ -20,8 +20,8 @@ import datetime, random, string
 class Configuration():
 
 	def __init__(self, analysisid, analysis_path=""):
-		self.analysisid = analysisid
-		self.analysis_path = analysis_path
+		self.analysisid = analysisid.strip()
+		self.analysis_path = analysis_path.strip()
 		self.myconfig = {}
 		#根据analysis id获取分析路径, 子项目信息, 
 		self.search_mongo()
@@ -40,7 +40,6 @@ class Configuration():
 								where {}'.format(' or '.join("sub_code = \"%s\"" % s for s in self.project)))
 		#合并多个项目值
 		merge_dict = defaultdict(set)
-		print(mysearch)
 		for mysearch_element in mysearch:
 			for key,value in mysearch_element.items():
 				merge_dict[key].add(value)

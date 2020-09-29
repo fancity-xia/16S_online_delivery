@@ -9,6 +9,7 @@ import argparse
 import random, string, json
 #from Baseconfiguration import Configuration, Onlinepermission, UploadMain
 sys.path.append(os.path.join(os.path.dirname(os.path.realpath(__file__)), ".."))
+from lib.config import *
 from Email.exchange_email import Exchange_email
 from Bo_upload.Baseconfiguration import Configuration, Onlinepermission, UploadMain
 
@@ -32,7 +33,7 @@ class Pipeline_Upload():
 
 	def baseinfo_search(self):
 		#查询数据库获取基本信息
-		self.baseinfo = Configuration(analysisid, analysis_path)
+		self.baseinfo = Configuration(self.analysisid, self.upload_dir)
 		#self.upload_dir = self.baseinfo.myconfig['analysis_path']
 		try:
 		    self.upload_dir = self.correct_dir(self.baseinfo.myconfig['analysis_path'])
@@ -43,8 +44,8 @@ class Pipeline_Upload():
 		self.online_project = '_'.join(self.baseinfo.myconfig['projects'])
 		self.usreamil = self.baseinfo.myconfig.get("customerEmail", 'test')
 		usr_compile = re.compile(r'(^[A-Za-z0-9]+)@')
-		self.usr = usr_compile.findall(self.usreamil)[0] + "_Online1"
-		self.password = self.baseinfo.myconfig.get("password", "test1234") + "_Online1"	
+		self.usr = usr_compile.findall(self.usreamil)[0]  +  str(delivery_online['account_prefix'])
+		self.password = self.baseinfo.myconfig.get("password", "test1234") + str(delivery_online['account_prefix'])	
 		self.projects = self.baseinfo.myconfig['projects']
 		self.project_num = self.baseinfo.myconfig['project_num']
 
@@ -76,12 +77,12 @@ class Pipeline_Upload():
 		to = ','.join(self.baseinfo.myconfig['action_man'])
 		if other:
 			to = to + "," + other
-		email_module = "/root/16s/Modules/Bo_upload/email_module.txt"
+		email_module = delivery_online['email_module']
 		ee = open(email_module, 'r')
 		eestring = ee.read()
 		ee.close()
 		#cc = "xiazhanfeng@genomics.cn"
-		cc = "xiazhanfeng@genomics.cn,wangshuang3@genomics.cn," + ",".join(self.baseinfo.myconfig['info_email'])
+		cc = delivery_online['email_cc_adress'] + "," + ",".join(self.baseinfo.myconfig['info_email'])
 		eestring = eestring.format(self.analysisid, ','.join(self.project_num), ','.join(self.projects), self.usr, self.password)
 		myemail = Exchange_email("{}数据交付".format(self.analysisid), eestring, to, cc)
 

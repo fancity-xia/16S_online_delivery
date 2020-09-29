@@ -103,3 +103,519 @@ V3fmjM need to be created
 /root/Software/miniconda3/envs/qiime1/bin/bo upload -c 5 -f /nas1/production_16s/analysis/report/6cLB4ma/result/upload e2861eae-59c9-4587-90d1-8b73063d75fb:/6cLB4ma/
 /root/Software/miniconda3/envs/qiime1/bin/bo new delivery_user -p 2vXfofO_Online1 -d 30 807729670_Online1
 /root/Software/miniconda3/envs/qiime1/bin/bo set_permission -p e2861eae-59c9-4587-90d1-8b73063d75fb 807729670_Online1 dv
+nohup: ignoring input
+{'sub_code': 'BACiwiM', 'item_email': 'P_Micro_Bioanalysis@genomics.cn', 'id': 969, 'proccess_type': 2}
+BACiwiM start to run main pipeline 19984 at /nas1/production_16s/SimplePipe/BACiwiM20200921180534
+/root/Software/miniconda3/bin/snakemake --snakefile /root/16s/Modules/SimplePipe/Snakefile --cores 1 --configfile /nas1/production_16s/SimplePipe/BACiwiM20200921180534/input.yaml --cluster "qsub -clear -cwd -q re16s.q -l vf={resources.mem_mb}M" --jobs 50 --latency-wait 60 -d /nas1/production_16s/SimplePipe/BACiwiM20200921180534 --drmaa-log-dir /nas1/production_16s/SimplePipe/BACiwiM20200921180534 --stats runtime.json --restart-times 3
+{'sub_code': 'BACiwiM', 'status': 1}
+{'sub_code': '16SptdM', 'item_email': 'tongbangzhuo@bgi.com', 'id': 977, 'proccess_type': 2}
+{'sub_code': 'METhacM', 'item_email': 'tongbangzhuo@bgi.com', 'id': 964, 'proccess_type': 2}
+{'sub_code': '16SacyM', 'item_email': 'tongbangzhuo@bgi.com', 'id': 963, 'proccess_type': 2}
+{'sub_code': 'METrawM', 'item_email': 'tongbangzhuo@bgi.com', 'id': 965, 'proccess_type': 2}
+{'sub_code': 'MICvinM', 'item_email': 'tongbangzhuo@bgi.com', 'id': 958, 'proccess_type': 2}
+{'sub_code': 'METixfM', 'item_email': 'tongbangzhuo@bgi.com', 'id': 955, 'proccess_type': 2}
+16SacyM start to run main pipeline 6689 at /nas1/production_16s/SimplePipe/16SacyM20200923152339
+/root/Software/miniconda3/bin/snakemake --snakefile /root/16s/Modules/SimplePipe/Snakefile --cores 1 --configfile /nas1/production_16s/SimplePipe/16SacyM20200923152339/input.yaml --cluster "qsub -clear -cwd -q re16s.q -l vf={resources.mem_mb}M" --jobs 50 --latency-wait 60 -d /nas1/production_16s/SimplePipe/16SacyM20200923152339 --drmaa-log-dir /nas1/production_16s/SimplePipe/16SacyM20200923152339 --stats runtime.json --restart-times 3
+{'sub_code': '16SacyM', 'status': 1}
+16SptdM start to run main pipeline 5162 at /nas1/production_16s/SimplePipe/16SptdM20200923152225
+/root/Software/miniconda3/bin/snakemake --snakefile /root/16s/Modules/SimplePipe/Snakefile --cores 1 --configfile /nas1/production_16s/SimplePipe/16SptdM20200923152225/input.yaml --cluster "qsub -clear -cwd -q re16s.q -l vf={resources.mem_mb}M" --jobs 50 --latency-wait 60 -d /nas1/production_16s/SimplePipe/16SptdM20200923152225 --drmaa-log-dir /nas1/production_16s/SimplePipe/16SptdM20200923152225 --stats runtime.json --restart-times 3
+{'sub_code': '16SptdM', 'status': 1}
+METixfM start to run main pipeline 7827 at /nas1/production_16s/SimplePipe/METixfM20200923152643
+/root/Software/miniconda3/bin/snakemake --snakefile /root/16s/Modules/SimplePipe/Snakefile --cores 1 --configfile /nas1/production_16s/SimplePipe/METixfM20200923152643/input.yaml --cluster "qsub -clear -cwd -q re16s.q -l vf={resources.mem_mb}M" --jobs 50 --latency-wait 60 -d /nas1/production_16s/SimplePipe/METixfM20200923152643 --drmaa-log-dir /nas1/production_16s/SimplePipe/METixfM20200923152643 --stats runtime.json --restart-times 3
+{'sub_code': 'METixfM', 'status': 1}
+MICvinM start to run main pipeline 7597 at /nas1/production_16s/SimplePipe/MICvinM20200923152558
+/root/Software/miniconda3/bin/snakemake --snakefile /root/16s/Modules/SimplePipe/Snakefile --cores 1 --configfile /nas1/production_16s/SimplePipe/MICvinM20200923152558/input.yaml --cluster "qsub -clear -cwd -q re16s.q -l vf={resources.mem_mb}M" --jobs 50 --latency-wait 60 -d /nas1/production_16s/SimplePipe/MICvinM20200923152558 --drmaa-log-dir /nas1/production_16s/SimplePipe/MICvinM20200923152558 --stats runtime.json --restart-times 3
+{'sub_code': 'MICvinM', 'status': 1}
+{'sub_code': 'TICwelM', 'item_email': 'P_Micro_Bioanalysis@genomics.cn', 'id': 927, 'proccess_type': 2}
+{'sub_code': '16SoepM', 'item_email': 'P_Micro_Bioanalysis@genomics.cn', 'id': 688, 'proccess_type': 2}
+METrawM start to run main pipeline 6979 at /nas1/production_16s/SimplePipe/METrawM20200923152428
+/root/Software/miniconda3/bin/snakemake --snakefile /root/16s/Modules/SimplePipe/Snakefile --cores 1 --configfile /nas1/production_16s/SimplePipe/METrawM20200923152428/input.yaml --cluster "qsub -clear -cwd -q re16s.q -l vf={resources.mem_mb}M" --jobs 50 --latency-wait 60 -d /nas1/production_16s/SimplePipe/METrawM20200923152428 --drmaa-log-dir /nas1/production_16s/SimplePipe/METrawM20200923152428 --stats runtime.json --restart-times 3
+{'sub_code': 'METrawM', 'status': 1}
+{'sub_code': 'FISlicM', 'item_email': 'P_Micro_Bioanalysis@genomics.cn', 'id': 1014, 'proccess_type': 2}
+METhacM start to run main pipeline 5273 at /nas1/production_16s/SimplePipe/METhacM20200923152258
+/root/Software/miniconda3/bin/snakemake --snakefile /root/16s/Modules/SimplePipe/Snakefile --cores 1 --configfile /nas1/production_16s/SimplePipe/METhacM20200923152258/input.yaml --cluster "qsub -clear -cwd -q re16s.q -l vf={resources.mem_mb}M" --jobs 50 --latency-wait 60 -d /nas1/production_16s/SimplePipe/METhacM20200923152258 --drmaa-log-dir /nas1/production_16s/SimplePipe/METhacM20200923152258 --stats runtime.json --restart-times 3
+{'sub_code': 'METhacM', 'status': 1}
+FISlicM start to run main pipeline 25924 at /nas1/production_16s/SimplePipe/FISlicM20200923163102
+/root/Software/miniconda3/bin/snakemake --snakefile /root/16s/Modules/SimplePipe/Snakefile --cores 1 --configfile /nas1/production_16s/SimplePipe/FISlicM20200923163102/input.yaml --cluster "qsub -clear -cwd -q re16s.q -l vf={resources.mem_mb}M" --jobs 50 --latency-wait 60 -d /nas1/production_16s/SimplePipe/FISlicM20200923163102 --drmaa-log-dir /nas1/production_16s/SimplePipe/FISlicM20200923163102 --stats runtime.json --restart-times 3
+{'sub_code': 'FISlicM', 'status': 1}
+TICwelM start to run main pipeline 19795 at /nas1/production_16s/SimplePipe/TICwelM20200923161218
+/root/Software/miniconda3/bin/snakemake --snakefile /root/16s/Modules/SimplePipe/Snakefile --cores 1 --configfile /nas1/production_16s/SimplePipe/TICwelM20200923161218/input.yaml --cluster "qsub -clear -cwd -q re16s.q -l vf={resources.mem_mb}M" --jobs 50 --latency-wait 60 -d /nas1/production_16s/SimplePipe/TICwelM20200923161218 --drmaa-log-dir /nas1/production_16s/SimplePipe/TICwelM20200923161218 --stats runtime.json --restart-times 3
+/nas1/production_16s/SimplePipe/TICwelM20200923161218/analysis.stdout.log
+{'sub_code': 'TICwelM', 'status': 0}
+16SoepM start to run main pipeline 25678 at /nas1/production_16s/SimplePipe/16SoepM20200923162909
+/root/Software/miniconda3/bin/snakemake --snakefile /root/16s/Modules/SimplePipe/Snakefile --cores 1 --configfile /nas1/production_16s/SimplePipe/16SoepM20200923162909/input.yaml --cluster "qsub -clear -cwd -q re16s.q -l vf={resources.mem_mb}M" --jobs 50 --latency-wait 60 -d /nas1/production_16s/SimplePipe/16SoepM20200923162909 --drmaa-log-dir /nas1/production_16s/SimplePipe/16SoepM20200923162909 --stats runtime.json --restart-times 3
+{'sub_code': '16SoepM', 'status': 1}
+{'sub_code': 'HUMpwxM', 'item_email': 'tongbangzhuo@bgi.com', 'id': 1017, 'proccess_type': 2}
+{'sub_code': 'V34rteM', 'item_email': 'P_Micro_Bioanalysis@genomics.cn', 'id': 959, 'proccess_type': 2}
+HUMpwxM start to run main pipeline 2612 at /nas1/production_16s/SimplePipe/HUMpwxM20200925093225
+/root/Software/miniconda3/bin/snakemake --snakefile /root/16s/Modules/SimplePipe/Snakefile --cores 1 --configfile /nas1/production_16s/SimplePipe/HUMpwxM20200925093225/input.yaml --cluster "qsub -clear -cwd -q re16s.q -l vf={resources.mem_mb}M" --jobs 50 --latency-wait 60 -d /nas1/production_16s/SimplePipe/HUMpwxM20200925093225 --drmaa-log-dir /nas1/production_16s/SimplePipe/HUMpwxM20200925093225 --stats runtime.json --restart-times 3
+{'sub_code': 'HUMpwxM', 'status': 1}
+V34rteM start to run main pipeline 5213 at /nas1/production_16s/SimplePipe/V34rteM20200925100403
+/root/Software/miniconda3/bin/snakemake --snakefile /root/16s/Modules/SimplePipe/Snakefile --cores 1 --configfile /nas1/production_16s/SimplePipe/V34rteM20200925100403/input.yaml --cluster "qsub -clear -cwd -q re16s.q -l vf={resources.mem_mb}M" --jobs 50 --latency-wait 60 -d /nas1/production_16s/SimplePipe/V34rteM20200925100403 --drmaa-log-dir /nas1/production_16s/SimplePipe/V34rteM20200925100403 --stats runtime.json --restart-times 3
+{'sub_code': 'V34rteM', 'status': 1}
+{'sub_code': 'BACrhrM', 'item_email': 'P_Micro_Bioanalysis@genomics.cn', 'id': 1026, 'proccess_type': 2}
+{'sub_code': 'BACrhrM', 'item_email': 'zhangqianqian@genomics.cn', 'id': 1026, 'proccess_type': 2}
+{'sub_code': 'BACgrhM', 'item_email': 'zhangqianqian@genomics.cn', 'id': 1009, 'proccess_type': 2}
+BACrhrM start to run main pipeline 14889 at /nas1/production_16s/SimplePipe/BACrhrM20200925105447
+/root/Software/miniconda3/bin/snakemake --snakefile /root/16s/Modules/SimplePipe/Snakefile --cores 1 --configfile /nas1/production_16s/SimplePipe/BACrhrM20200925105447/input.yaml --cluster "qsub -clear -cwd -q re16s.q -l vf={resources.mem_mb}M" --jobs 50 --latency-wait 60 -d /nas1/production_16s/SimplePipe/BACrhrM20200925105447 --drmaa-log-dir /nas1/production_16s/SimplePipe/BACrhrM20200925105447 --stats runtime.json --restart-times 3
+{'sub_code': 'BACrhrM', 'status': 1}
+BACrhrM start to run main pipeline 14849 at /nas1/production_16s/SimplePipe/BACrhrM20200925105419
+/root/Software/miniconda3/bin/snakemake --snakefile /root/16s/Modules/SimplePipe/Snakefile --cores 1 --configfile /nas1/production_16s/SimplePipe/BACrhrM20200925105419/input.yaml --cluster "qsub -clear -cwd -q re16s.q -l vf={resources.mem_mb}M" --jobs 50 --latency-wait 60 -d /nas1/production_16s/SimplePipe/BACrhrM20200925105419 --drmaa-log-dir /nas1/production_16s/SimplePipe/BACrhrM20200925105419 --stats runtime.json --restart-times 3
+{'sub_code': 'BACrhrM', 'status': 1}
+BACgrhM start to run main pipeline 16012 at /nas1/production_16s/SimplePipe/BACgrhM20200925105454
+/root/Software/miniconda3/bin/snakemake --snakefile /root/16s/Modules/SimplePipe/Snakefile --cores 1 --configfile /nas1/production_16s/SimplePipe/BACgrhM20200925105454/input.yaml --cluster "qsub -clear -cwd -q re16s.q -l vf={resources.mem_mb}M" --jobs 50 --latency-wait 60 -d /nas1/production_16s/SimplePipe/BACgrhM20200925105454 --drmaa-log-dir /nas1/production_16s/SimplePipe/BACgrhM20200925105454 --stats runtime.json --restart-times 3
+{'sub_code': 'BACgrhM', 'status': 1}
+{'sub_code': 'V3VztsM', 'item_email': 'shijiamei@genomics.cn', 'id': 987, 'proccess_type': 2}
+V3VztsM start to run main pipeline 21873 at /nas1/production_16s/SimplePipe/V3VztsM20200925112643
+/root/Software/miniconda3/bin/snakemake --snakefile /root/16s/Modules/SimplePipe/Snakefile --cores 1 --configfile /nas1/production_16s/SimplePipe/V3VztsM20200925112643/input.yaml --cluster "qsub -clear -cwd -q re16s.q -l vf={resources.mem_mb}M" --jobs 50 --latency-wait 60 -d /nas1/production_16s/SimplePipe/V3VztsM20200925112643 --drmaa-log-dir /nas1/production_16s/SimplePipe/V3VztsM20200925112643 --stats runtime.json --restart-times 3
+{'sub_code': 'V3VztsM', 'status': 1}
+{'sub_code': 'V3VirrM', 'item_email': 'P_Micro_Bioanalysis@genomics.cn', 'id': 1023, 'proccess_type': 2}
+V3VirrM start to run main pipeline 16635 at /nas1/production_16s/SimplePipe/V3VirrM20200925153259
+/root/Software/miniconda3/bin/snakemake --snakefile /root/16s/Modules/SimplePipe/Snakefile --cores 1 --configfile /nas1/production_16s/SimplePipe/V3VirrM20200925153259/input.yaml --cluster "qsub -clear -cwd -q re16s.q -l vf={resources.mem_mb}M" --jobs 50 --latency-wait 60 -d /nas1/production_16s/SimplePipe/V3VirrM20200925153259 --drmaa-log-dir /nas1/production_16s/SimplePipe/V3VirrM20200925153259 --stats runtime.json --restart-times 3
+{'sub_code': 'V3VirrM', 'status': 1}
+{'sub_code': '16SmxxM', 'item_email': 'dongzhsh@genomics.cn', 'id': 644, 'proccess_type': 2}
+{'sub_code': 'METnhoM', 'item_email': 'P_Micro_Bioanalysis@genomics.cn', 'id': 1019, 'proccess_type': 2}
+METnhoM start to run main pipeline 29457 at /nas1/production_16s/SimplePipe/METnhoM20200925172219
+/root/Software/miniconda3/bin/snakemake --snakefile /root/16s/Modules/SimplePipe/Snakefile --cores 1 --configfile /nas1/production_16s/SimplePipe/METnhoM20200925172219/input.yaml --cluster "qsub -clear -cwd -q re16s.q -l vf={resources.mem_mb}M" --jobs 50 --latency-wait 60 -d /nas1/production_16s/SimplePipe/METnhoM20200925172219 --drmaa-log-dir /nas1/production_16s/SimplePipe/METnhoM20200925172219 --stats runtime.json --restart-times 3
+{'sub_code': 'METnhoM', 'status': 1}
+16SmxxM start to run main pipeline 29379 at /nas1/production_16s/SimplePipe/16SmxxM20200925172120
+/root/Software/miniconda3/bin/snakemake --snakefile /root/16s/Modules/SimplePipe/Snakefile --cores 1 --configfile /nas1/production_16s/SimplePipe/16SmxxM20200925172120/input.yaml --cluster "qsub -clear -cwd -q re16s.q -l vf={resources.mem_mb}M" --jobs 50 --latency-wait 60 -d /nas1/production_16s/SimplePipe/16SmxxM20200925172120 --drmaa-log-dir /nas1/production_16s/SimplePipe/16SmxxM20200925172120 --stats runtime.json --restart-times 3
+{'sub_code': '16SmxxM', 'status': 1}
+{'sub_code': 'HUMunpM', 'item_email': 'tongbangzhuo@bgi.com', 'id': 567, 'proccess_type': 2}
+HUMunpM start to run main pipeline 6927 at /nas1/production_16s/SimplePipe/HUMunpM20200925173822
+/root/Software/miniconda3/bin/snakemake --snakefile /root/16s/Modules/SimplePipe/Snakefile --cores 1 --configfile /nas1/production_16s/SimplePipe/HUMunpM20200925173822/input.yaml --cluster "qsub -clear -cwd -q re16s.q -l vf={resources.mem_mb}M" --jobs 50 --latency-wait 60 -d /nas1/production_16s/SimplePipe/HUMunpM20200925173822 --drmaa-log-dir /nas1/production_16s/SimplePipe/HUMunpM20200925173822 --stats runtime.json --restart-times 3
+{'sub_code': 'HUMunpM', 'status': 1}
+{'sub_code': '16SyfiM', 'item_email': 'dongzhsh@genomics.cn', 'id': 978, 'proccess_type': 2}
+16SyfiM start to run main pipeline 12470 at /nas1/production_16s/SimplePipe/16SyfiM20200927173206
+/root/Software/miniconda3/bin/snakemake --snakefile /root/16s/Modules/SimplePipe/Snakefile --cores 1 --configfile /nas1/production_16s/SimplePipe/16SyfiM20200927173206/input.yaml --cluster "qsub -clear -cwd -q re16s.q -l vf={resources.mem_mb}M" --jobs 50 --latency-wait 60 -d /nas1/production_16s/SimplePipe/16SyfiM20200927173206 --drmaa-log-dir /nas1/production_16s/SimplePipe/16SyfiM20200927173206 --stats runtime.json --restart-times 3
+{'sub_code': '16SyfiM', 'status': 1}
+Traceback (most recent call last):
+  File "/root/16s/Modules/SimplePipe/run_snakemake.py", line 151, in <module>
+    rab.receieve()
+  File "/root/16s/Modules_v2/SimplePipe/myRabbitMQ.py", line 81, in receieve
+    self.channel.start_consuming()
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 1866, in start_consuming
+    self._process_data_events(time_limit=None)
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 2027, in _process_data_events
+    self.connection.process_data_events(time_limit=time_limit)
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 825, in process_data_events
+    self._flush_output(common_terminator)
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 522, in _flush_output
+    raise self._closed_result.value.error
+pika.exceptions.StreamLostError: Transport indicated EOF
+nohup: ignoring input
+{'plan_code': 'ZFX0mV7', 'user_email': 'zhangguiping@genomics.cn'}
+{'plan_code': 'ZFX0mV7', 'user_email': 'zhangguiping@genomics.cn'}
+{'plan_code': '1JIWUyI', 'user_email': 'zhoudandan@genomics.cn'}
+{'plan_code': '1JIWUyI', 'user_email': 'zhoudandan@genomics.cn'}
+{'plan_code': '1JIWUyI', 'user_email': 'zhoudandan@genomics.cn'}
+Traceback (most recent call last):
+  File "/root/16s/Modules/Bo_upload/run_boupload.py", line 65, in <module>
+    route = args.route
+  File "/root/16s/Modules_v2/Bo_upload/../SimplePipe/myRabbitMQ.py", line 81, in receieve
+    self.channel.start_consuming()
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 1866, in start_consuming
+    self._process_data_events(time_limit=None)
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 2027, in _process_data_events
+    self.connection.process_data_events(time_limit=time_limit)
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 825, in process_data_events
+    self._flush_output(common_terminator)
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 513, in _flush_output
+    self._impl.ioloop.poll()
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/select_connection.py", line 576, in poll
+    self._poller.poll()
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/select_connection.py", line 1181, in poll
+    events = self._poll.poll(self._get_max_wait())
+KeyboardInterrupt
+nohup: ignoring input
+{'plan_code': '1JIWUyI', 'user_email': 'P_Micro_Bioanalysis@genomics.cn'}
+{'plan_code': '1JIWUyI', 'user_email': 'P_Micro_Bioanalysis@genomics.cn'}
+Traceback (most recent call last):
+  File "/root/16s/Modules/Bo_upload/run_boupload.py", line 67, in <module>
+    rab = MultiRabbit(exchange, queue, route)
+  File "/root/16s/Modules_v2/Bo_upload/../SimplePipe/myRabbitMQ.py", line 81, in receieve
+    self.channel.start_consuming()
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 1866, in start_consuming
+    self._process_data_events(time_limit=None)
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 2027, in _process_data_events
+    self.connection.process_data_events(time_limit=time_limit)
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 825, in process_data_events
+    self._flush_output(common_terminator)
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 513, in _flush_output
+    self._impl.ioloop.poll()
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/select_connection.py", line 576, in poll
+    self._poller.poll()
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/select_connection.py", line 1181, in poll
+    events = self._poll.poll(self._get_max_wait())
+KeyboardInterrupt
+nohup: ignoring input
+{'plan_code': '1JIWUyI', 'user_email': 'P_Micro_Bioanalysis@genomics.cn'}
+{'plan_code': '1JIWUyI', 'user_email': 'P_Micro_Bioanalysis@genomics.cn'}
+Traceback (most recent call last):
+  File "/root/16s/Modules/Bo_upload/run_boupload.py", line 68, in <module>
+  File "/root/16s/Modules_v2/Bo_upload/../SimplePipe/myRabbitMQ.py", line 81, in receieve
+    self.channel.start_consuming()
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 1866, in start_consuming
+    self._process_data_events(time_limit=None)
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 2027, in _process_data_events
+    self.connection.process_data_events(time_limit=time_limit)
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 825, in process_data_events
+    self._flush_output(common_terminator)
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 513, in _flush_output
+    self._impl.ioloop.poll()
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/select_connection.py", line 576, in poll
+    self._poller.poll()
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/select_connection.py", line 1181, in poll
+    events = self._poll.poll(self._get_max_wait())
+KeyboardInterrupt
+nohup: ignoring input
+{'plan_code': '1JIWUyI', 'user_email': 'P_Micro_Bioanalysis@genomics.cn'}
+Traceback (most recent call last):
+  File "/root/16s/Modules/Bo_upload/run_boupload.py", line 67, in <module>
+    rab.receieve()
+  File "/root/16s/Modules_v2/Bo_upload/../SimplePipe/myRabbitMQ.py", line 81, in receieve
+    self.channel.start_consuming()
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 1866, in start_consuming
+    self._process_data_events(time_limit=None)
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 2027, in _process_data_events
+    self.connection.process_data_events(time_limit=time_limit)
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 825, in process_data_events
+    self._flush_output(common_terminator)
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 513, in _flush_output
+    self._impl.ioloop.poll()
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/select_connection.py", line 576, in poll
+    self._poller.poll()
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/select_connection.py", line 1181, in poll
+    events = self._poll.poll(self._get_max_wait())
+KeyboardInterrupt
+nohup: ignoring input
+{'plan_code': '1JIWUyI', 'user_email': 'P_Micro_Bioanalysis@genomics.cn'}
+Process Process-1:
+Traceback (most recent call last):
+  File "/root/Software/miniconda3/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/root/Software/miniconda3/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/root/16s/Modules/Bo_upload/run_boupload.py", line 46, in Run_mainpipe
+    myupload = Pipeline_Upload(message['plan_code'])
+  File "/root/16s/Modules_v2/Bo_upload/delivery_upload.py", line 24, in __init__
+    print(analsysisid)
+NameError: name 'analsysisid' is not defined
+Traceback (most recent call last):
+  File "/root/16s/Modules/Bo_upload/run_boupload.py", line 67, in <module>
+    rab.receieve()
+  File "/root/16s/Modules_v2/Bo_upload/../SimplePipe/myRabbitMQ.py", line 81, in receieve
+    self.channel.start_consuming()
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 1866, in start_consuming
+    self._process_data_events(time_limit=None)
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 2027, in _process_data_events
+    self.connection.process_data_events(time_limit=time_limit)
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 825, in process_data_events
+    self._flush_output(common_terminator)
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 513, in _flush_output
+    self._impl.ioloop.poll()
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/select_connection.py", line 576, in poll
+    self._poller.poll()
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/select_connection.py", line 1181, in poll
+    events = self._poll.poll(self._get_max_wait())
+KeyboardInterrupt
+nohup: ignoring input
+{'plan_code': '1JIWUyI', 'user_email': 'P_Micro_Bioanalysis@genomics.cn'}
+Traceback (most recent call last):
+  File "/root/16s/Modules/Bo_upload/run_boupload.py", line 67, in <module>
+    rab.receieve()
+  File "/root/16s/Modules_v2/Bo_upload/../SimplePipe/myRabbitMQ.py", line 81, in receieve
+    self.channel.start_consuming()
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 1866, in start_consuming
+    self._process_data_events(time_limit=None)
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 2027, in _process_data_events
+    self.connection.process_data_events(time_limit=time_limit)
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 825, in process_data_events
+    self._flush_output(common_terminator)
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 513, in _flush_output
+    self._impl.ioloop.poll()
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/select_connection.py", line 576, in poll
+    self._poller.poll()
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/select_connection.py", line 1181, in poll
+    events = self._poll.poll(self._get_max_wait())
+KeyboardInterrupt
+nohup: ignoring input
+{'plan_code': '1JIWUyI', 'user_email': 'P_Micro_Bioanalysis@genomics.cn'}
+Process Process-1:
+Traceback (most recent call last):
+  File "/root/Software/miniconda3/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/root/Software/miniconda3/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/root/16s/Modules/Bo_upload/run_boupload.py", line 46, in Run_mainpipe
+    myupload = Pipeline_Upload(message['plan_code'])
+  File "/root/16s/Modules_v2/Bo_upload/delivery_upload.py", line 27, in __init__
+    self.baseinfo_search()
+  File "/root/16s/Modules_v2/Bo_upload/delivery_upload.py", line 35, in baseinfo_search
+    self.baseinfo = Configuration(analysisid, analysis_path)
+NameError: name 'analysisid' is not defined
+{'plan_code': '1JIWUyI', 'user_email': 'P_Micro_Bioanalysis@genomics.cn'}
+Process Process-2:
+Traceback (most recent call last):
+  File "/root/Software/miniconda3/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/root/Software/miniconda3/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/root/16s/Modules/Bo_upload/run_boupload.py", line 46, in Run_mainpipe
+    myupload = Pipeline_Upload(message['plan_code'])
+  File "/root/16s/Modules_v2/Bo_upload/delivery_upload.py", line 27, in __init__
+    self.baseinfo_search()
+  File "/root/16s/Modules_v2/Bo_upload/delivery_upload.py", line 35, in baseinfo_search
+    self.baseinfo = Configuration(self.analysisid, self.analysis_path)
+NameError: name 'analysisid' is not defined
+Traceback (most recent call last):
+  File "/root/16s/Modules/Bo_upload/run_boupload.py", line 67, in <module>
+    rab.receieve()
+  File "/root/16s/Modules_v2/Bo_upload/../SimplePipe/myRabbitMQ.py", line 81, in receieve
+    self.channel.start_consuming()
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 1866, in start_consuming
+    self._process_data_events(time_limit=None)
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 2027, in _process_data_events
+    self.connection.process_data_events(time_limit=time_limit)
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 825, in process_data_events
+    self._flush_output(common_terminator)
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 513, in _flush_output
+    self._impl.ioloop.poll()
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/select_connection.py", line 576, in poll
+    self._poller.poll()
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/select_connection.py", line 1181, in poll
+    events = self._poll.poll(self._get_max_wait())
+KeyboardInterrupt
+nohup: ignoring input
+{'plan_code': '1JIWUyI', 'user_email': 'P_Micro_Bioanalysis@genomics.cn'}
+Process Process-1:
+Traceback (most recent call last):
+  File "/root/Software/miniconda3/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/root/Software/miniconda3/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/root/16s/Modules/Bo_upload/run_boupload.py", line 46, in Run_mainpipe
+    myupload = Pipeline_Upload(message['plan_code'])
+  File "/root/16s/Modules_v2/Bo_upload/delivery_upload.py", line 27, in __init__
+    self.baseinfo_search()
+  File "/root/16s/Modules_v2/Bo_upload/delivery_upload.py", line 35, in baseinfo_search
+    self.baseinfo = Configuration(self.analysisid, self.analysis_path)
+AttributeError: 'Pipeline_Upload' object has no attribute 'analysis_path'
+nohup: ignoring input
+Traceback (most recent call last):
+  File "/root/16s/Modules/Bo_upload/run_boupload.py", line 67, in <module>
+    rab.receieve()
+  File "/root/16s/Modules_v2/Bo_upload/../SimplePipe/myRabbitMQ.py", line 81, in receieve
+    self.channel.start_consuming()
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 1866, in start_consuming
+    self._process_data_events(time_limit=None)
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 2027, in _process_data_events
+    self.connection.process_data_events(time_limit=time_limit)
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 825, in process_data_events
+    self._flush_output(common_terminator)
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 513, in _flush_output
+    self._impl.ioloop.poll()
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/select_connection.py", line 576, in poll
+    self._poller.poll()
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/select_connection.py", line 1181, in poll
+    events = self._poll.poll(self._get_max_wait())
+KeyboardInterrupt
+nohup: ignoring input
+{'plan_code': '1JIWUyI', 'user_email': 'P_Micro_Bioanalysis@genomics.cn'}
+Traceback (most recent call last):
+  File "/root/16s/Modules/Bo_upload/run_boupload.py", line 67, in <module>
+    rab.receieve()
+  File "/root/16s/Modules_v2/Bo_upload/../SimplePipe/myRabbitMQ.py", line 81, in receieve
+    self.channel.start_consuming()
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 1866, in start_consuming
+    self._process_data_events(time_limit=None)
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 2027, in _process_data_events
+    self.connection.process_data_events(time_limit=time_limit)
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 825, in process_data_events
+    self._flush_output(common_terminator)
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 513, in _flush_output
+    self._impl.ioloop.poll()
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/select_connection.py", line 576, in poll
+    self._poller.poll()
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/select_connection.py", line 1181, in poll
+    events = self._poll.poll(self._get_max_wait())
+KeyboardInterrupt
+nohup: ignoring input
+{'plan_code': '1JIWUyI', 'user_email': 'P_Micro_Bioanalysis@genomics.cn'}
+mongodb://root:BgiMicrobe%402020@120.24.55.116:27017
+connect mongo successful......
+connect mysql......
+connect mysql successful......
+/root/Software/miniconda3/envs/qiime1/bin/bo login --token 8HX5tDVZIDraS8OS9XSQuTbtaTddT3Qs --noprojects
+PGxNqJq6oEy_Online1
+/root/Software/miniconda3/envs/qiime1/bin/bo select HUMpwxM
+Could not find a project named 'HUMpwxM'
+HUMpwxM need to be created
+/root/Software/miniconda3/envs/qiime1/bin/bo new project HUMpwxM
+/root/Software/miniconda3/envs/qiime1/bin/bo mkdir 7eb0705a-e120-4a1f-8e2d-bd033d0b6d34:/1JIWUyI
+/root/Software/miniconda3/envs/qiime1/bin/bo upload -c 5 -f /nas1/production_16s/analysis/report/1JIWUyI/result/upload 7eb0705a-e120-4a1f-8e2d-bd033d0b6d34:/1JIWUyI/
+/root/Software/miniconda3/envs/qiime1/bin/bo new delivery_user -p PGxNqJq6oEy_Online1 -d 30 1503669327_Online1
+/root/Software/miniconda3/envs/qiime1/bin/bo set_permission -p 7eb0705a-e120-4a1f-8e2d-bd033d0b6d34 1503669327_Online1 dv
+{'plan_code': '1JIWUyI', 'user_email': 'zhoudandan@genomics.cn'}
+mongodb://root:BgiMicrobe%402020@120.24.55.116:27017
+connect mongo successful......
+connect mysql......
+connect mysql successful......
+/root/Software/miniconda3/envs/qiime1/bin/bo login --token 8HX5tDVZIDraS8OS9XSQuTbtaTddT3Qs --noprojects
+PGxNqJq6oEy_Online1
+/root/Software/miniconda3/envs/qiime1/bin/bo select HUMpwxM
+Could not find a project named 'HUMpwxM'
+HUMpwxM need to be created
+/root/Software/miniconda3/envs/qiime1/bin/bo new project HUMpwxM
+/root/Software/miniconda3/envs/qiime1/bin/bo mkdir ae58841f-9f2c-446f-8d1e-d684a1422dac:/1JIWUyI
+/root/Software/miniconda3/envs/qiime1/bin/bo upload -c 5 -f /nas1/production_16s/analysis/report/1JIWUyI/result/upload ae58841f-9f2c-446f-8d1e-d684a1422dac:/1JIWUyI/
+/root/Software/miniconda3/envs/qiime1/bin/bo new delivery_user -p PGxNqJq6oEy_Online1 -d 30 1503669327_Online1
+/root/Software/miniconda3/envs/qiime1/bin/bo set_permission -p ae58841f-9f2c-446f-8d1e-d684a1422dac 1503669327_Online1 dv
+{'plan_code': '9TzzAnM', 'user_email': 'liangliping@genomics.cn'}
+mongodb://root:BgiMicrobe%402020@120.24.55.116:27017
+connect mongo successful......
+connect mysql......
+connect mysql successful......
+/root/Software/miniconda3/envs/qiime1/bin/bo login --token 8HX5tDVZIDraS8OS9XSQuTbtaTddT3Qs --noprojects
+EJpLuj2GEt_Online1
+/root/Software/miniconda3/envs/qiime1/bin/bo select METdqcM
+Could not find a project named 'METdqcM'
+METdqcM need to be created
+/root/Software/miniconda3/envs/qiime1/bin/bo new project METdqcM
+/root/Software/miniconda3/envs/qiime1/bin/bo mkdir 53e13725-f9f1-4d08-bcf7-45b0b24ac5e9:/9TzzAnM
+/root/Software/miniconda3/envs/qiime1/bin/bo upload -c 5 -f /nas1/production_16s/analysis/report/9TzzAnM/result/upload 53e13725-f9f1-4d08-bcf7-45b0b24ac5e9:/9TzzAnM/
+/root/Software/miniconda3/envs/qiime1/bin/bo new delivery_user -p EJpLuj2GEt_Online1 -d 30 yzhao1688_Online1
+/root/Software/miniconda3/envs/qiime1/bin/bo set_permission -p 53e13725-f9f1-4d08-bcf7-45b0b24ac5e9 yzhao1688_Online1 dv
+{'plan_code': 'YNiRSsf', 'user_email': 'liangliping@genomics.cn'}
+mongodb://root:BgiMicrobe%402020@120.24.55.116:27017
+connect mongo successful......
+connect mysql......
+connect mysql successful......
+/root/Software/miniconda3/envs/qiime1/bin/bo login --token 8HX5tDVZIDraS8OS9XSQuTbtaTddT3Qs --noprojects
+EJpLuj2GEt_Online1
+/root/Software/miniconda3/envs/qiime1/bin/bo select METhacM
+Could not find a project named 'METhacM'
+METhacM need to be created
+/root/Software/miniconda3/envs/qiime1/bin/bo new project METhacM
+/root/Software/miniconda3/envs/qiime1/bin/bo mkdir ceb1e1f2-37aa-4aea-bae4-9baa20a5f5b9:/YNiRSsf
+/root/Software/miniconda3/envs/qiime1/bin/bo upload -c 5 -f /nas1/production_16s/analysis/report/YNiRSsf/result/upload ceb1e1f2-37aa-4aea-bae4-9baa20a5f5b9:/YNiRSsf/
+/root/Software/miniconda3/envs/qiime1/bin/bo new delivery_user -p EJpLuj2GEt_Online1 -d 30 yzhao1688_Online1
+/root/Software/miniconda3/envs/qiime1/bin/bo set_permission -p ceb1e1f2-37aa-4aea-bae4-9baa20a5f5b9 yzhao1688_Online1 dv
+{'plan_code': 'Nbaeudz', 'user_email': 'liangliping@genomics.cn'}
+mongodb://root:BgiMicrobe%402020@120.24.55.116:27017
+connect mongo successful......
+connect mysql......
+connect mysql successful......
+/root/Software/miniconda3/envs/qiime1/bin/bo login --token 8HX5tDVZIDraS8OS9XSQuTbtaTddT3Qs --noprojects
+EJpLuj2GEt_Online1
+/root/Software/miniconda3/envs/qiime1/bin/bo select METrawM
+Could not find a project named 'METrawM'
+METrawM need to be created
+/root/Software/miniconda3/envs/qiime1/bin/bo new project METrawM
+/root/Software/miniconda3/envs/qiime1/bin/bo mkdir a1830abc-9d59-4492-8330-73e7bb68baed:/Nbaeudz
+Process Process-5:
+Traceback (most recent call last):
+  File "/root/Software/miniconda3/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/root/Software/miniconda3/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/root/16s/Modules/Bo_upload/run_boupload.py", line 46, in Run_mainpipe
+    myupload = Pipeline_Upload(message['plan_code'])
+  File "/root/16s/Modules_v2/Bo_upload/delivery_upload.py", line 30, in __init__
+    myupload = UploadMain(self.online_project, self.upload_dir)
+  File "/root/16s/Modules_v2/Bo_upload/../Bo_upload/Baseconfiguration.py", line 214, in upload_main
+    step2_info = self.run_subprocess(main_step2)
+  File "/root/16s/Modules_v2/Bo_upload/../Bo_upload/Baseconfiguration.py", line 235, in run_subprocess
+    return Onlinepermission.run_subprocess(instring)
+  File "/root/16s/Modules_v2/Bo_upload/../Bo_upload/Baseconfiguration.py", line 89, in run_subprocess
+    out, error = run.communicate()
+  File "/root/Software/miniconda3/lib/python3.7/subprocess.py", line 964, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+  File "/root/Software/miniconda3/lib/python3.7/subprocess.py", line 1715, in _communicate
+    ready = selector.select(timeout)
+  File "/root/Software/miniconda3/lib/python3.7/selectors.py", line 415, in select
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/root/16s/Modules/Bo_upload/run_boupload.py", line 67, in <module>
+    rab.receieve()
+  File "/root/16s/Modules_v2/Bo_upload/../SimplePipe/myRabbitMQ.py", line 81, in receieve
+    self.channel.start_consuming()
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 1866, in start_consuming
+    self._process_data_events(time_limit=None)
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 2027, in _process_data_events
+    self.connection.process_data_events(time_limit=time_limit)
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 825, in process_data_events
+    self._flush_output(common_terminator)
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 513, in _flush_output
+    self._impl.ioloop.poll()
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/select_connection.py", line 576, in poll
+    self._poller.poll()
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/select_connection.py", line 1181, in poll
+    events = self._poll.poll(self._get_max_wait())
+KeyboardInterrupt
+nohup: ignoring input
+{'plan_code': 'Nbaeudz', 'user_email': 'liangliping@genomics.cn'}
+mongodb://root:BgiMicrobe%402020@120.24.55.116:27017
+connect mongo successful......
+connect mysql......
+connect mysql successful......
+/root/Software/miniconda3/envs/qiime1/bin/bo login --token 8HX5tDVZIDraS8OS9XSQuTbtaTddT3Qs --noprojects
+EJpLuj2GEtOnline1
+/root/Software/miniconda3/envs/qiime1/bin/bo select METrawM
+Setting current project to: METrawM
+METrawM have existed
+/root/Software/miniconda3/envs/qiime1/bin/bo find project
+/root/Software/miniconda3/envs/qiime1/bin/bo mkdir a1830abc-9d59-4492-8330-73e7bb68baed:/Nbaeudz
+/root/Software/miniconda3/envs/qiime1/bin/bo upload -c 5 -f /nas1/production_16s/analysis/report/Nbaeudz/result/upload a1830abc-9d59-4492-8330-73e7bb68baed:/Nbaeudz/
+/root/Software/miniconda3/envs/qiime1/bin/bo new delivery_user -p EJpLuj2GEtOnline1 -d 30 yzhao1688Online1
+/root/Software/miniconda3/envs/qiime1/bin/bo set_permission -p a1830abc-9d59-4492-8330-73e7bb68baed yzhao1688Online1 dv
+{'plan_code': 'Fidj5xb', 'user_email': 'liangliping@genomics.cn'}
+mongodb://root:BgiMicrobe%402020@120.24.55.116:27017
+connect mongo successful......
+connect mysql......
+connect mysql successful......
+/root/Software/miniconda3/envs/qiime1/bin/bo login --token 8HX5tDVZIDraS8OS9XSQuTbtaTddT3Qs --noprojects
+EJpLuj2GEtOnline1
+/root/Software/miniconda3/envs/qiime1/bin/bo select METjjgM
+Could not find a project named 'METjjgM'
+METjjgM need to be created
+/root/Software/miniconda3/envs/qiime1/bin/bo new project METjjgM
+/root/Software/miniconda3/envs/qiime1/bin/bo mkdir 384c7a6a-c954-4096-8491-68b83c8bab29:/Fidj5xb
+/root/Software/miniconda3/envs/qiime1/bin/bo upload -c 5 -f /nas1/production_16s/analysis/report/Fidj5xb/result/upload 384c7a6a-c954-4096-8491-68b83c8bab29:/Fidj5xb/
+/root/Software/miniconda3/envs/qiime1/bin/bo new delivery_user -p EJpLuj2GEtOnline1 -d 30 yzhao1688Online1
+/root/Software/miniconda3/envs/qiime1/bin/bo set_permission -p 384c7a6a-c954-4096-8491-68b83c8bab29 yzhao1688Online1 dv
+{'plan_code': 'bXlrsXm', 'user_email': 'liangliping@genomics.cn'}
+mongodb://root:BgiMicrobe%402020@120.24.55.116:27017
+connect mongo successful......
+connect mysql......
+connect mysql successful......
+/root/Software/miniconda3/envs/qiime1/bin/bo login --token 8HX5tDVZIDraS8OS9XSQuTbtaTddT3Qs --noprojects
+EJpLuj2GEtOnline1
+/root/Software/miniconda3/envs/qiime1/bin/bo select METixfM
+Could not find a project named 'METixfM'
+METixfM need to be created
+/root/Software/miniconda3/envs/qiime1/bin/bo new project METixfM
+/root/Software/miniconda3/envs/qiime1/bin/bo mkdir b7a6a33f-f881-468f-9fc6-457bb48655c7:/bXlrsXm
+/root/Software/miniconda3/envs/qiime1/bin/bo upload -c 5 -f /nas1/production_16s/analysis/report/bXlrsXm/result/upload b7a6a33f-f881-468f-9fc6-457bb48655c7:/bXlrsXm/
+/root/Software/miniconda3/envs/qiime1/bin/bo new delivery_user -p EJpLuj2GEtOnline1 -d 30 yzhao1688Online1
+/root/Software/miniconda3/envs/qiime1/bin/bo set_permission -p b7a6a33f-f881-468f-9fc6-457bb48655c7 yzhao1688Online1 dv
+Traceback (most recent call last):
+  File "/root/16s/Modules/Bo_upload/run_boupload.py", line 67, in <module>
+    rab.receieve()
+  File "/root/16s/Modules_v2/Bo_upload/../SimplePipe/myRabbitMQ.py", line 81, in receieve
+    self.channel.start_consuming()
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 1866, in start_consuming
+    self._process_data_events(time_limit=None)
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 2027, in _process_data_events
+    self.connection.process_data_events(time_limit=time_limit)
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 825, in process_data_events
+    self._flush_output(common_terminator)
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/blocking_connection.py", line 513, in _flush_output
+    self._impl.ioloop.poll()
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/select_connection.py", line 576, in poll
+    self._poller.poll()
+  File "/root/Software/miniconda3/lib/python3.7/site-packages/pika/adapters/select_connection.py", line 1181, in poll
+    events = self._poll.poll(self._get_max_wait())
+KeyboardInterrupt
+nohup: ignoring input

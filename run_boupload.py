@@ -13,6 +13,7 @@ sys.path.append(os.path.join(os.path.dirname(os.path.realpath(__file__)), ".."))
 #sys.path.append("/root/16s/Modules/SimplePipe")
 #sys.path.append("/root/16s/Modules")
 from Email.exchange_email import Exchange_email
+from lib.config import *
 from SimplePipe.myRabbitMQ import MyRabbit
 import datetime
 import subprocess
@@ -24,7 +25,8 @@ from delivery_upload import Pipeline_Upload
 '''
 
 class MultiRabbit(MyRabbit):
-	
+
+	MQ_CONFIG = Rabbitmq_delivery_message	
 	def __init__(self, exchange, queue, routing_key):
 		super(MultiRabbit, self).__init__(exchange, queue, routing_key)
 		#self.pool = Pool(5)
@@ -46,9 +48,9 @@ def Run_mainpipe(message):
 		myupload.update_mysql()
 	except Exception as e:
 		errlog = '''<b>Auto Delivery Error</b>:
-		<span style="text-indent:2em; color=red">错误日志信息:{}</span>
-		<span style="text-indent:2em; color=green">Connect Email:  xiazhanfeng@genomics.cn</span>'''.format(e)
-		Exchange_email(message['plan_code'] + " Micro16S Auto Delivery Debug", errlog, 'xiazhanfeng@genomics.cn', message['user_email'] + ',wangshuang3@genomics.cn')
+		<span style="text-indent:2em; color=red">错误日志信息:{} -- {}</span>
+		<span style="text-indent:2em; color=green">Connect Email:  {}</span>'''.format(e, message['plan_code'], delivery_online['error_to_adress'])
+		Exchange_email(message['plan_code'] + " Micro16S Auto Delivery Debug", errlog, error_to_adress['error_to_adress'], message['user_email'])
 
 
 
