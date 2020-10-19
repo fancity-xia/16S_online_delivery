@@ -619,3 +619,153 @@ Traceback (most recent call last):
     events = self._poll.poll(self._get_max_wait())
 KeyboardInterrupt
 nohup: ignoring input
+{'plan_code': 'oJztS7o', 'user_email': 'zhuhui1@genomics.cn'}
+mongodb://root:BgiMicrobe%402020@120.24.55.116:27017
+connect mongo successful......
+connect mysql......
+connect mysql successful......
+/root/Software/miniconda3/envs/qiime1/bin/bo login --token 8HX5tDVZIDraS8OS9XSQuTbtaTddT3Qs --noprojects
+l9K23Mf_Online1
+/root/Software/miniconda3/envs/qiime1/bin/bo select METvpsM_METwloM_METnhoM
+Could not find a project named 'METvpsM_METwloM_METnhoM'
+METvpsM_METwloM_METnhoM need to be created
+/root/Software/miniconda3/envs/qiime1/bin/bo new project METvpsM_METwloM_METnhoM
+/root/Software/miniconda3/envs/qiime1/bin/bo mkdir e2d1c2ff-af6e-476b-869d-8fb379e84fd6:/oJztS7o
+/root/Software/miniconda3/envs/qiime1/bin/bo upload -c 5 -f /nas1/production_16s/analysis/report/oJztS7o/result/upload e2d1c2ff-af6e-476b-869d-8fb379e84fd6:/oJztS7o/
+/root/Software/miniconda3/envs/qiime1/bin/bo new delivery_user -p l9K23Mf_Online1 -d 30 13065138698_Online1
+/root/Software/miniconda3/envs/qiime1/bin/bo set_permission -p e2d1c2ff-af6e-476b-869d-8fb379e84fd6 13065138698_Online1 dv
+{'plan_code': 'bUCuBoR', 'user_email': 'zhangqianqian@genomics.cn'}
+mongodb://root:BgiMicrobe%402020@120.24.55.116:27017
+connect mongo successful......
+connect mysql......
+connect mysql successful......
+/root/Software/miniconda3/envs/qiime1/bin/bo login --token 8HX5tDVZIDraS8OS9XSQuTbtaTddT3Qs --noprojects
+Ue6d2WI7dke_Online1
+/root/Software/miniconda3/envs/qiime1/bin/bo select BACgrhM_BACrhrM_BACoayM
+Could not find a project named 'BACgrhM_BACrhrM_BACoayM'
+BACgrhM_BACrhrM_BACoayM need to be created
+/root/Software/miniconda3/envs/qiime1/bin/bo new project BACgrhM_BACrhrM_BACoayM
+/root/Software/miniconda3/envs/qiime1/bin/bo mkdir cf426748-9d8c-4895-a54a-fecf46df2e81:/bUCuBoR
+/root/Software/miniconda3/envs/qiime1/bin/bo upload -c 5 -f /nas1/production_16s/analysis/report/bUCuBoR/result/upload cf426748-9d8c-4895-a54a-fecf46df2e81:/bUCuBoR/
+/root/Software/miniconda3/envs/qiime1/bin/bo new delivery_user -p Ue6d2WI7dke_Online1 -d 30 690924694_Online1
+/root/Software/miniconda3/envs/qiime1/bin/bo set_permission -p cf426748-9d8c-4895-a54a-fecf46df2e81 690924694_Online1 dv
+{'plan_code': 'YnW6xgy', 'user_email': 'dongzhsh@genomics.cn'}
+mongodb://root:BgiMicrobe%402020@120.24.55.116:27017
+connect mongo successful......
+connect mysql......
+connect mysql successful......
+/root/Software/miniconda3/envs/qiime1/bin/bo login --token 8HX5tDVZIDraS8OS9XSQuTbtaTddT3Qs --noprojects
+OQMIc9a_Online1
+/root/Software/miniconda3/envs/qiime1/bin/bo select 16SmccM_16SmxxM
+Could not find a project named '16SmccM_16SmxxM'
+16SmccM_16SmxxM need to be created
+/root/Software/miniconda3/envs/qiime1/bin/bo new project 16SmccM_16SmxxM
+/root/Software/miniconda3/envs/qiime1/bin/bo mkdir b356564c-f5c1-4468-81e7-ed2c0104ac78:/YnW6xgy
+/root/Software/miniconda3/envs/qiime1/bin/bo upload -c 5 -f /nas1/production_16s/analysis/report/YnW6xgy/result/upload b356564c-f5c1-4468-81e7-ed2c0104ac78:/YnW6xgy/
+/root/Software/miniconda3/envs/qiime1/bin/bo new delivery_user -p OQMIc9a_Online1 -d 30 lan123845_Online1
+/root/Software/miniconda3/envs/qiime1/bin/bo set_permission -p b356564c-f5c1-4468-81e7-ed2c0104ac78 lan123845_Online1 dv
+{'plan_code': 'aDYZW1E', 'user_email': 'dongzhsh@genomics.cn'}
+mongodb://root:BgiMicrobe%402020@120.24.55.116:27017
+connect mongo successful......
+connect mysql......
+connect mysql successful......
+/root/Software/miniconda3/envs/qiime1/bin/bo login --token 8HX5tDVZIDraS8OS9XSQuTbtaTddT3Qs --noprojects
+feMkFlJ_Online1
+/root/Software/miniconda3/envs/qiime1/bin/bo select 16SspcM
+Could not find a project named '16SspcM'
+16SspcM need to be created
+/root/Software/miniconda3/envs/qiime1/bin/bo new project 16SspcM
+/root/Software/miniconda3/envs/qiime1/bin/bo mkdir 62fb3bc9-76e8-4f05-9a7d-62700d7927fe:/aDYZW1E
+/root/Software/miniconda3/envs/qiime1/bin/bo upload -c 5 -f /nas1/production_16s/analysis/report/aDYZW1E/result/upload 62fb3bc9-76e8-4f05-9a7d-62700d7927fe:/aDYZW1E/
+/root/Software/miniconda3/envs/qiime1/bin/bo new delivery_user -p feMkFlJ_Online1 -d 30 23959945_Online1
+/root/Software/miniconda3/envs/qiime1/bin/bo set_permission -p 62fb3bc9-76e8-4f05-9a7d-62700d7927fe 23959945_Online1 dv
+{'plan_code': 'H5qM9Pt', 'user_email': 'zhangqianqian@genomics.cn'}
+{'plan_code': 'BhcjpOq', 'user_email': 'zhangqianqian@genomics.cn'}
+mongodb://root:BgiMicrobe%402020@120.24.55.116:27017
+connect mongo successful......
+connect mysql......
+connect mysql successful......
+/root/Software/miniconda3/envs/qiime1/bin/bo login --token 8HX5tDVZIDraS8OS9XSQuTbtaTddT3Qs --noprojects
+Ue6d2WI7dke_Online1
+/root/Software/miniconda3/envs/qiime1/bin/bo select BACgrhM_BACrhrM_BACoayM
+Setting current project to: BACgrhM_BACrhrM_BACoayM
+BACgrhM_BACrhrM_BACoayM have existed
+/root/Software/miniconda3/envs/qiime1/bin/bo find project
+/root/Software/miniconda3/envs/qiime1/bin/bo mkdir cf426748-9d8c-4895-a54a-fecf46df2e81:/H5qM9Pt
+/root/Software/miniconda3/envs/qiime1/bin/bo upload -c 5 -f /nas1/production_16s/analysis/report/H5qM9Pt/result/upload cf426748-9d8c-4895-a54a-fecf46df2e81:/H5qM9Pt/
+/root/Software/miniconda3/envs/qiime1/bin/bo new delivery_user -p Ue6d2WI7dke_Online1 -d 30 690924694_Online1
+/root/Software/miniconda3/envs/qiime1/bin/bo set_permission -p cf426748-9d8c-4895-a54a-fecf46df2e81 690924694_Online1 dv
+mongodb://root:BgiMicrobe%402020@120.24.55.116:27017
+connect mongo successful......
+connect mysql......
+connect mysql successful......
+/root/Software/miniconda3/envs/qiime1/bin/bo login --token 8HX5tDVZIDraS8OS9XSQuTbtaTddT3Qs --noprojects
+Ue6d2WI7dke_Online1
+/root/Software/miniconda3/envs/qiime1/bin/bo select BACgrhM_BACrhrM_BACoayM
+Setting current project to: BACgrhM_BACrhrM_BACoayM
+BACgrhM_BACrhrM_BACoayM have existed
+/root/Software/miniconda3/envs/qiime1/bin/bo find project
+/root/Software/miniconda3/envs/qiime1/bin/bo mkdir cf426748-9d8c-4895-a54a-fecf46df2e81:/BhcjpOq
+/root/Software/miniconda3/envs/qiime1/bin/bo upload -c 5 -f /nas1/production_16s/analysis/report/BhcjpOq/result/upload cf426748-9d8c-4895-a54a-fecf46df2e81:/BhcjpOq/
+/root/Software/miniconda3/envs/qiime1/bin/bo new delivery_user -p Ue6d2WI7dke_Online1 -d 30 690924694_Online1
+/root/Software/miniconda3/envs/qiime1/bin/bo set_permission -p cf426748-9d8c-4895-a54a-fecf46df2e81 690924694_Online1 dv
+{'plan_code': 'NvUYkNg', 'user_email': 'zhangqianqian@genomics.cn'}
+{'plan_code': 'QEVMSnm', 'user_email': 'zhangqianqian@genomics.cn'}
+mongodb://root:BgiMicrobe%402020@120.24.55.116:27017
+connect mongo successful......
+connect mysql......
+connect mysql successful......
+/root/Software/miniconda3/envs/qiime1/bin/bo login --token 8HX5tDVZIDraS8OS9XSQuTbtaTddT3Qs --noprojects
+Ue6d2WI7dke_Online1
+/root/Software/miniconda3/envs/qiime1/bin/bo select BACgrhM_BACrhrM_BACoayM
+Setting current project to: BACgrhM_BACrhrM_BACoayM
+BACgrhM_BACrhrM_BACoayM have existed
+/root/Software/miniconda3/envs/qiime1/bin/bo find project
+/root/Software/miniconda3/envs/qiime1/bin/bo mkdir cf426748-9d8c-4895-a54a-fecf46df2e81:/NvUYkNg
+/root/Software/miniconda3/envs/qiime1/bin/bo upload -c 5 -f /nas1/production_16s/analysis/report/NvUYkNg/result/upload cf426748-9d8c-4895-a54a-fecf46df2e81:/NvUYkNg/
+/root/Software/miniconda3/envs/qiime1/bin/bo new delivery_user -p Ue6d2WI7dke_Online1 -d 30 690924694_Online1
+/root/Software/miniconda3/envs/qiime1/bin/bo set_permission -p cf426748-9d8c-4895-a54a-fecf46df2e81 690924694_Online1 dv
+mongodb://root:BgiMicrobe%402020@120.24.55.116:27017
+connect mongo successful......
+connect mysql......
+connect mysql successful......
+/root/Software/miniconda3/envs/qiime1/bin/bo login --token 8HX5tDVZIDraS8OS9XSQuTbtaTddT3Qs --noprojects
+Ue6d2WI7dke_Online1
+/root/Software/miniconda3/envs/qiime1/bin/bo select BACgrhM_BACrhrM_BACoayM
+Setting current project to: BACgrhM_BACrhrM_BACoayM
+BACgrhM_BACrhrM_BACoayM have existed
+/root/Software/miniconda3/envs/qiime1/bin/bo find project
+/root/Software/miniconda3/envs/qiime1/bin/bo mkdir cf426748-9d8c-4895-a54a-fecf46df2e81:/QEVMSnm
+/root/Software/miniconda3/envs/qiime1/bin/bo upload -c 5 -f /nas1/production_16s/analysis/report/QEVMSnm/result/upload cf426748-9d8c-4895-a54a-fecf46df2e81:/QEVMSnm/
+/root/Software/miniconda3/envs/qiime1/bin/bo new delivery_user -p Ue6d2WI7dke_Online1 -d 30 690924694_Online1
+/root/Software/miniconda3/envs/qiime1/bin/bo set_permission -p cf426748-9d8c-4895-a54a-fecf46df2e81 690924694_Online1 dv
+{'plan_code': 'N5izWYz', 'user_email': 'dongzhsh@genomics.cn'}
+mongodb://root:BgiMicrobe%402020@120.24.55.116:27017
+connect mongo successful......
+connect mysql......
+connect mysql successful......
+/root/Software/miniconda3/envs/qiime1/bin/bo login --token 8HX5tDVZIDraS8OS9XSQuTbtaTddT3Qs --noprojects
+XN1u1TL_Online1
+/root/Software/miniconda3/envs/qiime1/bin/bo select HUMsmdM
+Could not find a project named 'HUMsmdM'
+HUMsmdM need to be created
+/root/Software/miniconda3/envs/qiime1/bin/bo new project HUMsmdM
+/root/Software/miniconda3/envs/qiime1/bin/bo mkdir 05b5ef81-a904-4304-8248-9c516a5f1c46:/N5izWYz
+/root/Software/miniconda3/envs/qiime1/bin/bo upload -c 5 -f /nas1/production_16s/analysis/report/N5izWYz/result/upload 05b5ef81-a904-4304-8248-9c516a5f1c46:/N5izWYz/
+/root/Software/miniconda3/envs/qiime1/bin/bo new delivery_user -p XN1u1TL_Online1 -d 30 chenxiaoling1_Online1
+/root/Software/miniconda3/envs/qiime1/bin/bo set_permission -p 05b5ef81-a904-4304-8248-9c516a5f1c46 chenxiaoling1_Online1 dv
+{'plan_code': 'JsKu70p', 'user_email': 'zhangqianqian@genomics.cn'}
+mongodb://root:BgiMicrobe%402020@120.24.55.116:27017
+connect mongo successful......
+connect mysql......
+connect mysql successful......
+/root/Software/miniconda3/envs/qiime1/bin/bo login --token 8HX5tDVZIDraS8OS9XSQuTbtaTddT3Qs --noprojects
+YjDfzkW_Online1
+/root/Software/miniconda3/envs/qiime1/bin/bo select DISdgwM_DISsigM
+Could not find a project named 'DISdgwM_DISsigM'
+DISdgwM_DISsigM need to be created
+/root/Software/miniconda3/envs/qiime1/bin/bo new project DISdgwM_DISsigM
+/root/Software/miniconda3/envs/qiime1/bin/bo mkdir 93685161-528a-4e0d-ac0c-f0b9f6a4ddce:/JsKu70p
+/root/Software/miniconda3/envs/qiime1/bin/bo upload -c 5 -f /nas1/production_16s/analysis/report/JsKu70p/result/upload 93685161-528a-4e0d-ac0c-f0b9f6a4ddce:/JsKu70p/
+/root/Software/miniconda3/envs/qiime1/bin/bo new delivery_user -p YjDfzkW_Online1 -d 30 304508597_Online1
+/root/Software/miniconda3/envs/qiime1/bin/bo set_permission -p 93685161-528a-4e0d-ac0c-f0b9f6a4ddce 304508597_Online1 dv
