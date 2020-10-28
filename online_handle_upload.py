@@ -19,7 +19,15 @@ class PureFilter_upload(Pipeline_Upload):
 	继承自流程bo上传工具
 	'''
 	def __init__(self, projectid, analysis_path):
-		super(PureFilter_upload, self).__init__(projectid, analysis_path)
+		#super(PureFilter_upload, self).__init__(projectid, analysis_path)
+		self.analysisid = analysisid
+		self.upload_dir = analysis_path
+		#定义基本信息; usr, online_project, password, upload_dir
+		self.baseinfo_search()
+		#online上传主流程
+		myupload = UploadMain(self.projectid, self.upload_dir)
+		self.password = myupload.upload_main("", self.usr, self.password)
+
 
 	
 	def baseinfo_search(self):
@@ -33,18 +41,20 @@ class PureFilter_upload(Pipeline_Upload):
 		self.online_project = mysearch['project_num']
 		self.projects = [self.analysisid,]
 		self.project_num = [mysearch['project_num'], ]
+		self.action_man = [mysearch['action_man'],]
+		self.info_email = [mysearch['info_email'],]
 
 
 def main(argv=None):
 	parser = argparse.ArgumentParser(description='Upload-Deliery-Data-To-Online')
 	parser.add_argument('--projectid','-p', required=True, help='subproject id')
 	parser.add_argument('--analysispath','-a', required=True, help='analysis upload path')
-	parser.parse_args(argv)
+	args = parser.parse_args(argv)
 	projectid = args.projectid
 	analsysispath = args.analysispath
 	#生成copy
-	if not os.path.lexists(analsysispath + "/result/upload"):
-		upload_cleandata_to_file.Run_cp_upload(analsysispath, Pure_16S_Pipeline['method'], Pure_16S_Pipeline['upload_CleanData_output_file'])
+	if not os.path.lexists(analsysispath + "/Cleandata"):
+		upload_cleandata_to_file.Run_cp_upload(analsysispath , Pure_16S_Pipeline['method'], Pure_16S_Pipeline['upload_CleanData_output_file'])
 	handle_upload = PureFilter_upload(projectid, analsysispath)
 	handle_upload.send_email()
 

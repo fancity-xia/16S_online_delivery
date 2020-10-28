@@ -235,8 +235,14 @@ class UploadMain():
 		return Onlinepermission.run_subprocess(instring)
 	
 
-	def random_password(self):
-		return ''.join(random.sample(string.ascii_letters + string.digits, 8))
+	@staticmethod
+	def random_password():
+		num_digits = random.randint(1,6)
+		upper_digits = random.randint(1,8-num_digits-1)
+		lower_digits = 8 - num_digits - upper_digits
+		mypass = random.sample(string.ascii_lowercase, lower_digits) + random.sample(string.ascii_uppercase, upper_digits) + random.sample(string.digits, num_digits)
+		random.shuffle(mypass)
+		return ''.join(mypass)
 
 
 if __name__  == '__main__':

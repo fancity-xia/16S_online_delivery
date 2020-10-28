@@ -48,6 +48,8 @@ class Pipeline_Upload():
 		self.password = self.baseinfo.myconfig.get("password", "test1234") + str(delivery_online['account_prefix'])	
 		self.projects = self.baseinfo.myconfig['projects']
 		self.project_num = self.baseinfo.myconfig['project_num']
+		self.action_man = self.baseinfo.myconfig['action_man']
+		self.info_email = self.baseinfo.myconfig['info_email']
 
 	
 	def correct_dir(self, indir):
@@ -74,7 +76,7 @@ class Pipeline_Upload():
 		发送交付邮件质控给负责人
 		'''
 		#to = "xiazhanfeng@genomics.cn"
-		to = ','.join(self.baseinfo.myconfig['action_man'])
+		to = ','.join(self.action_man)
 		if other:
 			to = to + "," + other
 		email_module = delivery_online['email_module']
@@ -82,7 +84,7 @@ class Pipeline_Upload():
 		eestring = ee.read()
 		ee.close()
 		#cc = "xiazhanfeng@genomics.cn"
-		cc = delivery_online['email_cc_adress'] + "," + ",".join(self.baseinfo.myconfig['info_email'])
+		cc = delivery_online['email_cc_adress'] + "," + ",".join(self.info_email)
 		eestring = eestring.format(self.analysisid, ','.join(self.project_num), ','.join(self.projects), self.usr, self.password)
 		myemail = Exchange_email("{}数据交付".format(self.analysisid), eestring, to, cc)
 
