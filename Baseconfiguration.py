@@ -96,7 +96,7 @@ class Onlinepermission():
 		return out.decode('utf8').strip()
 
 
-	def set_delivery(self, customer, password, day="30"):
+	def set_delivery(self, customer, password, day="90"):
 		'''添加交付账号'''
 		string = self.bo + " new delivery_user -p {} -d {} {}".format(password, day, customer)
 		self.run_subprocess(string)
@@ -201,6 +201,8 @@ class UploadMain():
 		# position only dir by time
 		if not keydir:
 			keydir = self.time_now()
+		else:
+			keydir += keydir + self.time_now()
 		if not password:
 			password = self.random_password()
 		# acquire keyid

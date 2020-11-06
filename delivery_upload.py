@@ -43,7 +43,7 @@ class Pipeline_Upload():
 		#根据方案编号生成账号密码
 		self.online_project = '_'.join(self.baseinfo.myconfig['projects'])
 		self.usreamil = self.baseinfo.myconfig.get("customerEmail", 'test')
-		usr_compile = re.compile(r'(^[A-Za-z0-9]+)@')
+		usr_compile = re.compile(r'(^[A-Za-z0-9\_\-]+)@')
 		self.usr = usr_compile.findall(self.usreamil)[0]  +  str(delivery_online['account_prefix'])
 		self.password = self.baseinfo.myconfig.get("password", "test1234") + str(delivery_online['account_prefix'])	
 		self.projects = self.baseinfo.myconfig['projects']
