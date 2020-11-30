@@ -24,7 +24,7 @@ online账号密码, 分析路径传递给mysql数据库t_microbe_delivery表。
 
 #### 16S纯过滤上传主程序(子项目维度)
 
-该程序主要包装自online_handle_upload.py; 用于纯过滤数据上传交付, 目前暂无自动化需要人工执行处理
+该程序主要包装自online_handle_upload.py; 用于纯过滤数据上传交付, 目前暂无自动化需要人工[root权限]执行处理
 ```shell
 /root/16s/Modules/Bo_upload/UploadPure -h
 usage: UploadPure [-h] --projectid PROJECTID --analysispath ANALYSISPATH
