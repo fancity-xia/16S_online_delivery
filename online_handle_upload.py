@@ -10,6 +10,7 @@ from Bo_upload.delivery_upload import Pipeline_Upload
 from OTU_Cluster.lib import upload_cleandata_to_file
 from Download_online.mysqldatabase import microbase
 from lib.config import *
+from Baseconfiguration import UploadMain
 '''
 纯过滤数据上传: 改写关键信息获取途径; 并调起online上传模块同时发送邮件
 '''
@@ -18,14 +19,14 @@ class PureFilter_upload(Pipeline_Upload):
 	'''
 	继承自流程bo上传工具
 	'''
-	def __init__(self, projectid, analysis_path):
-		#super(PureFilter_upload, self).__init__(projectid, analysis_path)
+	def __init__(self, analysisid, analysis_path):
+		#super(PureFilter_upload, self).__init__(analysisid, analysis_path)
 		self.analysisid = analysisid
 		self.upload_dir = analysis_path
 		#定义基本信息; usr, online_project, password, upload_dir
 		self.baseinfo_search()
 		#online上传主流程
-		myupload = UploadMain(self.projectid, self.upload_dir)
+		myupload = UploadMain(self.analysisid, self.upload_dir)
 		self.password = myupload.upload_main("", self.usr, self.password)
 
 
@@ -47,24 +48,24 @@ class PureFilter_upload(Pipeline_Upload):
 
 def main(argv=None):
 	parser = argparse.ArgumentParser(description='Upload-Deliery-Data-To-Online')
-	parser.add_argument('--projectid','-p', required=True, help='subproject id')
+	parser.add_argument('--analysisid','-p', required=True, help='subproject id')
 	parser.add_argument('--analysispath','-a', required=True, help='analysis upload path')
 	args = parser.parse_args(argv)
-	projectid = args.projectid
+	analysisid = args.analysisid
 	analsysispath = args.analysispath
 	#生成copy
 	if not os.path.lexists(analsysispath + "/Cleandata"):
 		upload_cleandata_to_file.Run_cp_upload(analsysispath , Pure_16S_Pipeline['method'], Pure_16S_Pipeline['upload_CleanData_output_file'])
-	handle_upload = PureFilter_upload(projectid, analsysispath)
+	handle_upload = PureFilter_upload(analysisid, analsysispath)
 	handle_upload.send_email()
 
 
 if __name__  == '__main__':
 	parser = argparse.ArgumentParser(description='')
-	parser.add_argument('--projectid','-p', required=True, help='subproject id')
+	parser.add_argument('--analysisid','-p', required=True, help='subproject id')
 	parser.add_argument('--analysispath','-a', required=True, help='PureFilter project analysis path')
 	args = parser.parse_args()
-	projectid = args.projectid
+	analysisid = args.analysisid
 	analsysispath = args.analysispath
-	handle_upload = PureFilter_upload(projectid, analsysispath)
+	handle_upload = PureFilter_upload(analysisid, analsysispath)
 	handle_upload.send_email()

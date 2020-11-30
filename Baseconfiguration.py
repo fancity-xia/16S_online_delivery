@@ -202,7 +202,7 @@ class UploadMain():
 		if not keydir:
 			keydir = self.time_now()
 		else:
-			keydir += keydir + self.time_now()
+			keydir = keydir + self.time_now()
 		if not password:
 			password = self.random_password()
 		# acquire keyid
@@ -230,7 +230,7 @@ class UploadMain():
 
 
 	def time_now(self):
-		datetime.datetime.strftime(datetime.datetime.now(), "%Y%m%d%H%M%S")
+		return datetime.datetime.strftime(datetime.datetime.now(), "%Y%m%d%H%M%S")
 
 
 	def run_subprocess(self, instring):
