@@ -25,7 +25,8 @@ class Mymongo():
 
 	def connect_mongodb(self):
 		#connect windowns mongodb database
-		url = "mongodb://" + self.username + ":" + self.password + "@" + self.host + ":" + self.port
+		#url = "mongodb://" + self.username + ":" + self.password + "@" + self.host + ":" + self.port
+		url = "mongodb://" + self.username + ":" + self.password + "@" + self.host
 		print(url)
 		try:
 			self.mongo_client = pymongo.MongoClient(url)

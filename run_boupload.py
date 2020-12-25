@@ -50,7 +50,7 @@ def Run_mainpipe(message):
 		errlog = '''<b>Auto Delivery Error</b>:
 		<span style="text-indent:2em; color=red">错误日志信息:{} -- {}</span>
 		<span style="text-indent:2em; color=green">Connect Email:  {}</span>'''.format(e, message['plan_code'], delivery_online['error_to_adress'])
-		Exchange_email(message['plan_code'] + " Micro16S Auto Delivery Debug", errlog, error_to_adress['error_to_adress'], message['user_email'])
+		Exchange_email(message['plan_code'] + " Micro16S Auto Delivery Debug", errlog, delivery_online['error_to_adress'], message['user_email'])
 
 
 

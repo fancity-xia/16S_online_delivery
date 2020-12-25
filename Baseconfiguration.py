@@ -31,7 +31,8 @@ class Configuration():
 
 	def search_mysql(self):
 		#subid = set()
-		self.mysql = microbase(mysql_manage_16s['server'], mysql_manage_16s['db'], mysql_manage_16s['user'], mysql_manage_16s['password'])
+		print("search mysql")
+		self.mysql = microbase(mysql_manage_16s['server'], mysql_manage_16s['db'], mysql_manage_16s['user'], mysql_manage_16s['password'], mysql_manage_16s['port'])
 		#查询结果由元组=>dict pymysql.cursors.DictCursor
 		self.mysql.to_dict()
 		mysearch_password = self.mysql.read_from_outspace('select password from micro16s.t_microbe_customer where customer_email = \"{}\"'.format(self.customer_email))
@@ -49,6 +50,7 @@ class Configuration():
 	
 
 	def search_mongo(self):
+		print("search mongo")
 		mymg = Mymongo()
 		mymg.connect_mongodb()
 		mydb = mymg.mongo_client['microbe']
@@ -188,7 +190,8 @@ class UploadMain():
 			self.keyid = keydict[self.online_project][0]
 		else:
 			print("bo updating... or Other error; Exit()")
-			sys.exit()
+			select_info = "OnlineError{%s}" % select_info
+			raise Exception(select_info)
 
 
 	def upload_main(self, keydir, usr, password = ""):
